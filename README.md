@@ -22,3 +22,7 @@ WebSecurityConfigurerAdapter 상속 받아 보안 강화
 @EnableWebSecurity
 
 @EnableGlobalMethodSecurity(prePostEnabled = true) //prePost 로 권한 체크 선언
+
+![image](https://github.com/user-attachments/assets/71ec5f3c-2f63-4ac5-a292-7509c2b6acac)
+
+위와 같이 user 계정으로 로그인 하면 /admin 페이지에 권한이 통과 되지 않아 막힌다.
