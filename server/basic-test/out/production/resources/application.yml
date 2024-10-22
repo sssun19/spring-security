@@ -1,0 +1,21 @@
+server:
+  port: 9050
+
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3-2-BasicLogin
+spring:
+  security:
+    user:
+      name: user1
+<<<<<<< HEAD
+      password: 1111
+      roles: USER
+
+
+=======
+      password: 1234
+      roles: USER
+>>>>>>> 3-2-BasicLogin
