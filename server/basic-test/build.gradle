@@ -3,11 +3,7 @@
 dependencies {
 
     implementation("$boot:spring-boot-starter-web")
-
-<<<<<<< HEAD
     implementation project(":comp-common-utils")
 
-=======
->>>>>>> 3-2-BasicLogin
 }
 

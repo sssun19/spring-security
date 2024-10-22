@@ -15,16 +15,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 @NoArgsConstructor
 @Builder
 public class SecurityMessage {
-
-
-    private Authentication auth;
-
     private UserDetails user;
-
-
     private String message;
 
-    public static HomeController builder() {
-        return null;
-    }
+
 }
