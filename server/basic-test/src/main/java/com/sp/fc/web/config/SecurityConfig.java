@@ -55,6 +55,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 //        http.headers().disable()
 //                .csrf().disable()
+<<<<<<< HEAD
+=======
+//                .formLogin(login -> login.defaultSuccessUrl("/", false))
+>>>>>>> 3-2-BasicLogin
 //                .logout().disable()
 //                .requestCache().disable();
     }

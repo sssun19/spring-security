@@ -1,24 +1,37 @@
 
 buildscript {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3-2-BasicLogin
     ext {
         spring = "2.5.7"
         boot = "org.springframework.boot"
         lombok = "org.projectlombok:lombok"
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3-2-BasicLogin
     repositories {
         mavenCentral()
     }
     dependencies {
         classpath("$boot:spring-boot-gradle-plugin:$spring")
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3-2-BasicLogin
 }
 
 allprojects {
     group = "com.sp.fc"
     version = "1.0.0"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3-2-BasicLogin
 }
 
 subprojects {
@@ -49,7 +62,11 @@ subprojects {
         annotationProcessor lombok
         testAnnotationProcessor lombok
 
+<<<<<<< HEAD
         testImplementation "$boot:spring-boot-stater-test"
+=======
+        testImplementation "$boot:spring-boot-starter-test"
+>>>>>>> 3-2-BasicLogin
     }
 
     test {
@@ -58,22 +75,38 @@ subprojects {
 
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3-2-BasicLogin
 ["comp", "web"].each {
     def subProjectDir = new File(projectDir, it)
     subProjectDir.eachDir {dir->
         def projectName = ":${it}-${dir.name}"
+<<<<<<< HEAD
         project(projectName) {
+=======
+        project(projectName){
+>>>>>>> 3-2-BasicLogin
             bootJar.enabled(false)
             jar.enabled(true)
         }
     }
 }
+<<<<<<< HEAD
 
 ["server"].each {
     def subProjectDir = new File(projectDir, it)
     subProjectDir.eachDir {dir ->
         def projectName = ":${it}-${dir.name}"
         project(projectName) {
+=======
+["server"].each {
+    def subProjectDir = new File(projectDir, it)
+    subProjectDir.eachDir {dir->
+        def projectName = ":${it}-${dir.name}"
+        project(projectName){
+>>>>>>> 3-2-BasicLogin
 
         }
     }

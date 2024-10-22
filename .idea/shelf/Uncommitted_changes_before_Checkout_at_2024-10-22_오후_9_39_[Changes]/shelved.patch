@@ -1,0 +1,59 @@
+Index: server/basic-test/src/main/java/com/sp/fc/web/config/SecurityConfig.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.sp.fc.web.config;\r\n\r\n\r\nimport org.springframework.context.annotation.Bean;\r\nimport org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;\r\nimport org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;\r\nimport org.springframework.security.config.annotation.web.builders.HttpSecurity;\r\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\r\nimport org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;\r\nimport org.springframework.security.core.userdetails.User;\r\nimport org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;\r\nimport org.springframework.security.crypto.password.PasswordEncoder;\r\n\r\n@EnableWebSecurity(debug = true) //시큐리티 필터 체인의 종류를 디버그로 찍을 수 있음\r\n@EnableGlobalMethodSecurity(prePostEnabled = true) //prePost 로 권한 체크 선언\r\npublic class SecurityConfig extends WebSecurityConfigurerAdapter {\r\n\r\n    @Override\r\n    protected void configure(AuthenticationManagerBuilder auth) throws Exception {\r\n        auth.inMemoryAuthentication()\r\n                .withUser(User.builder()\r\n                        .username(\"user2\")\r\n                        .password(passwordEncoder().encode(\"2222\"))\r\n                        .roles(\"USER\"))\r\n\r\n                .withUser(User.builder()\r\n                        .username(\"admin\")\r\n                        .password(passwordEncoder().encode(\"3333\"))\r\n                        .roles(\"ADMIN\"));\r\n    }\r\n\r\n    @Bean\r\n    PasswordEncoder passwordEncoder() {\r\n        return new BCryptPasswordEncoder();\r\n    }\r\n\r\n    @Override\r\n    protected void configure(HttpSecurity http) throws Exception {\r\n\r\n        http.antMatcher(\"/**\"); //모든 request 에 대해 필터 체인 동작\r\n        http.antMatcher(\"/api/**\"); //api 하위 request 에 대해 필터 체인 동작\r\n\r\n        /** 두 개 이상의 필터 체인을 구성하려면 Security filter chain 을 하나 더 생성함. (예시로 SecurityConfig 클래스 추가 생성)\r\n         * 그런 경우 어떤 필터 체인 클래스를 우선 순위로 할지 @Order(n) 어노테이션으로 필수 설정해 주어야 함.\r\n         * 낮은 n 순서부터 먼저 체크\r\n         */\r\n\r\n\r\n        http.authorizeRequests((requests) -> {\r\n            requests.antMatchers(\"/\").permitAll() //기본 페이지는 모두 접근 가능하도록\r\n                    .anyRequest().authenticated(); //모든 페이지를 인증 받은 후(로그인) 접근할 수 있도록\r\n        });\r\n        http.formLogin();\r\n        http.httpBasic();\r\n\r\n//        http.headers().disable()\r\n//                .csrf().disable()\r\n//                .logout().disable()\r\n//                .requestCache().disable();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/server/basic-test/src/main/java/com/sp/fc/web/config/SecurityConfig.java b/server/basic-test/src/main/java/com/sp/fc/web/config/SecurityConfig.java
+--- a/server/basic-test/src/main/java/com/sp/fc/web/config/SecurityConfig.java	(revision 8f527da2297cdcc5e2e28b780dce112c3ce9d51b)
++++ b/server/basic-test/src/main/java/com/sp/fc/web/config/SecurityConfig.java	(date 1729600212506)
+@@ -36,26 +36,33 @@
+ 
+     @Override
+     protected void configure(HttpSecurity http) throws Exception {
+-
+-        http.antMatcher("/**"); //모든 request 에 대해 필터 체인 동작
+-        http.antMatcher("/api/**"); //api 하위 request 에 대해 필터 체인 동작
++//
++//        http.antMatcher("/**"); //모든 request 에 대해 필터 체인 동작
++//        http.antMatcher("/api/**"); //api 하위 request 에 대해 필터 체인 동작
+ 
+         /** 두 개 이상의 필터 체인을 구성하려면 Security filter chain 을 하나 더 생성함. (예시로 SecurityConfig 클래스 추가 생성)
+          * 그런 경우 어떤 필터 체인 클래스를 우선 순위로 할지 @Order(n) 어노테이션으로 필수 설정해 주어야 함.
+-         * 낮은 n 순서부터 먼저 체크
+-         */
++         * 낮은 n 순서부터 먼저 체크 */
++
+ 
++//        http.authorizeRequests((requests) -> {
++//            requests.antMatchers("/").permitAll() //기본 페이지는 모두 접근 가능하도록
++//                    .anyRequest().authenticated(); //모든 페이지를 인증 받은 후(로그인) 접근할 수 있도록
++//        });
++//        http.formLogin();
++//        http.httpBasic();
+ 
+-        http.authorizeRequests((requests) -> {
+-            requests.antMatchers("/").permitAll() //기본 페이지는 모두 접근 가능하도록
+-                    .anyRequest().authenticated(); //모든 페이지를 인증 받은 후(로그인) 접근할 수 있도록
+-        });
+-        http.formLogin();
+-        http.httpBasic();
++        http.headers().disable()
++                .csrf().disable()
++                .formLogin(login->
++                        login.defaultSuccessUrl("/", false))
+ 
+-//        http.headers().disable()
+-//                .csrf().disable()
+-//                .logout().disable()
+-//                .requestCache().disable();
++                /** formLogin(login -> login.defaultSuccessUrl("/", false))
++                 * 로그인에 성공하면 루트 페이지로 이동
++                 * 두 번째 인자 alwaysUse 를 false 로 처리해 다른 페이지로 이동하던 와중에 로그인 필터가 작동한 경우
++                 * 로그인에 성공하면 가려던 페이지로 리다이렉 하기. */
++
++                .logout().disable()
++                .requestCache().disable();
+     }
+ }
