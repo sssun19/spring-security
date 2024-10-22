@@ -238,8 +238,10 @@
       </method>
     </configuration>
     <configuration name="LoginBasicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="sp-fastcampus-spring-sec.server-login-basic.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.LoginBasicApplication" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -279,7 +281,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729411350960</updated>
-      <workItem from="1729417431043" duration="23343000" />
+      <workItem from="1729417431043" duration="24258000" />
     </task>
     <servers />
   </component>

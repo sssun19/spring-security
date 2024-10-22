@@ -38,7 +38,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                      * 웹 리소스(css,...)에 대해 security filter 를 적용되지 않도록 ignore 시켜야 함.
                      */
                 })
-                .formLogin(login->login.loginPage("/login").permitAll());
+                .formLogin(login->login.loginPage("/login").permitAll()
+                        .defaultSuccessUrl("/", false)
+                        .failureUrl("/login-error")
+                )
+                .logout(logout -> logout.logoutSuccessUrl("/"))
+        ;
     }
 
     @Override
