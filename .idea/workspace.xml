@@ -129,7 +129,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LoginBasicApplication">
+  <component name="RunManager" selected="Spring Boot.BasicSecurityTestApp">
     <configuration name="Test1.test_1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
