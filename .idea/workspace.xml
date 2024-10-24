@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e2a9058-d7dd-424a-a165-67e8b30a66d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/login-basic/src/main/java/com/sp/fc/web/config/CustomAuthDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-basic/src/main/java/com/sp/fc/web/config/RequestInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/build/classes/java/main/com/sp/fc/web/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-basic/build/classes/java/main/com/sp/fc/web/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/build/classes/java/main/com/sp/fc/web/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-basic/build/classes/java/main/com/sp/fc/web/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/java/com/sp/fc/web/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-basic/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/java/com/sp/fc/web/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-basic/src/main/java/com/sp/fc/web/controller/HomeController.java" afterDir="false" />
-    </list>
+    <list default="true" id="1e2a9058-d7dd-424a-a165-67e8b30a66d9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
