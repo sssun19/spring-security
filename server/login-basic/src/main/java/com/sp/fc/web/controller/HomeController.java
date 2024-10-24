@@ -50,4 +50,5 @@ public class HomeController {
     public String adminPage(){
         return "AdminPage";
     }
+
 }

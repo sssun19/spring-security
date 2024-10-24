@@ -20,6 +20,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     public SecurityConfig(CustomAuthDetails customAuthDetails) {
         this.customAuthDetails = customAuthDetails;
+
+
     }
 
     @Override
@@ -43,13 +45,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Bean
     RoleHierarchy roleHierarchy() {
-        RoleHierarchyImpl roleHierarchy = new RoleHierarchyImpl();
-        roleHierarchy.setHierarchy("ROLE_ADMIN > ROLE_USER");
-        return roleHierarchy;
+                RoleHierarchyImpl roleHierarchy = new RoleHierarchyImpl();
+                roleHierarchy.setHierarchy("ROLE_ADMIN > ROLE_USER");
+                return roleHierarchy;
+
     }
+
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+
         http.authorizeRequests(request->{
                     request.antMatchers("/").permitAll()
                             .anyRequest().authenticated();
@@ -75,5 +80,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         web.ignoring()
                 .requestMatchers(
                         PathRequest.toStaticResources().atCommonLocations()); // image, css, js bootstrap
+
     }
+
+
 }
