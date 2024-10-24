@@ -16,6 +16,12 @@ import org.springframework.security.core.userdetails.User;
 @EnableGlobalMethodSecurity(prePostEnabled = true) // 설정된 role 확인해 접근 제한
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
+    private final CustomAuthDetails customAuthDetails;
+
+    public SecurityConfig(CustomAuthDetails customAuthDetails) {
+        this.customAuthDetails = customAuthDetails;
+    }
+
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
@@ -56,6 +62,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin(login->login.loginPage("/login").permitAll()
                         .defaultSuccessUrl("/", false)
                         .failureUrl("/login-error")
+                        .authenticationDetailsSource(customAuthDetails)
+
                 )
                 .logout(logout -> logout.logoutSuccessUrl("/"))
                 .exceptionHandling(exception -> exception.accessDeniedPage("/access-denied"))
