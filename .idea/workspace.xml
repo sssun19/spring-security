@@ -5,52 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e2a9058-d7dd-424a-a165-67e8b30a66d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/CustomLoginApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/controller/TeacherController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/intro.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/AccessDenied.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/StudentMain.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/TeacherMain.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/loginForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/web-common.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/server/basic-test/sp-fastcampus-spring-sec.server-basic-test.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/StudentAuthenticationToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/StudentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/build/classes/java/main/com/sp/fc/web/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-basic/build/classes/java/main/com/sp/fc/web/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/out/production/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-basic/out/production/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/out/production/resources/templates/loginForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-basic/out/production/resources/templates/loginForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/java/com/sp/fc/web/config/RequestInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-basic/src/main/java/com/sp/fc/web/config/RequestInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/java/com/sp/fc/web/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-basic/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/java/com/sp/fc/web/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-basic/src/main/java/com/sp/fc/web/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-basic/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/templates/loginForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-basic/src/main/resources/templates/loginForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-test/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-test/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-test/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-test/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-test/src/test/java/com/sp/fc/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-test/src/test/java/com/sp/fc/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-basic/build/resources/main/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/templates/loginForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-basic/build/resources/main/templates/loginForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-basic/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/web-common.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/server/web-common.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,53 +97,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Gradle.Build sp-fastcampus-spring-sec.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Test1.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Test1.test_1.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.sp-fastcampus-spring-sec [bootJar].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.sp-fastcampus-spring-sec [buildDependents].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.sp-fastcampus-spring-sec [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.sp-fastcampus-spring-sec [dependencies].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.sp-fastcampus-spring-sec [init].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.sp-fastcampus-spring-sec [jar].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.sp-fastcampus-spring-sec [test].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.sp-fastcampus-spring-sec:comp:common-utils [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.sp-fastcampus-spring-sec:comp:common-utils [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.sp-fastcampus-spring-sec:comp:common-utils [jar].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.sp-fastcampus-spring-sec:server:basic-test [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.sp-fastcampus-spring-sec:server:basic-test [jar].executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.BasicSecurityTestApp.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.BasicTestApplication (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.BasicTestApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.LoginBasicApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/dev/todo-server&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "true",
+    "Gradle.Build sp-fastcampus-spring-sec.executor": "Run",
+    "Gradle.Test1.executor": "Run",
+    "Gradle.Test1.test_1.executor": "Run",
+    "Gradle.sp-fastcampus-spring-sec [bootJar].executor": "Run",
+    "Gradle.sp-fastcampus-spring-sec [buildDependents].executor": "Run",
+    "Gradle.sp-fastcampus-spring-sec [build].executor": "Run",
+    "Gradle.sp-fastcampus-spring-sec [dependencies].executor": "Run",
+    "Gradle.sp-fastcampus-spring-sec [init].executor": "Run",
+    "Gradle.sp-fastcampus-spring-sec [jar].executor": "Run",
+    "Gradle.sp-fastcampus-spring-sec [test].executor": "Run",
+    "Gradle.sp-fastcampus-spring-sec:comp:common-utils [bootJar].executor": "Run",
+    "Gradle.sp-fastcampus-spring-sec:comp:common-utils [build].executor": "Run",
+    "Gradle.sp-fastcampus-spring-sec:comp:common-utils [clean].executor": "Run",
+    "Gradle.sp-fastcampus-spring-sec:comp:common-utils [jar].executor": "Run",
+    "Gradle.sp-fastcampus-spring-sec:server:basic-test [build].executor": "Run",
+    "Gradle.sp-fastcampus-spring-sec:server:basic-test [jar].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BasicSecurityTestApp.executor": "Run",
+    "Spring Boot.BasicTestApplication (1).executor": "Debug",
+    "Spring Boot.BasicTestApplication.executor": "Run",
+    "Spring Boot.CustomLoginApp.executor": "Run",
+    "Spring Boot.LoginBasicApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/dev/sp-fastcampus-spring-sec",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.sp.fc.web.config" />
@@ -178,31 +162,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Test1.test_1">
-    <configuration name="Test1.test_1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":server-basic-test:test" />
-            <option value="--tests" />
-            <option value="&quot;com.sp.fc.Test1.test_1&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.CustomLoginApp">
     <configuration name="sp-fastcampus-spring-sec [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -225,10 +185,10 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="sp-fastcampus-spring-sec [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="sp-fastcampus-spring-sec:comp:common-utils [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/comp/common-utils" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -236,7 +196,51 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="test" />
+            <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="sp-fastcampus-spring-sec:comp:common-utils [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/comp/common-utils" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="sp-fastcampus-spring-sec:comp:common-utils [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/comp/common-utils" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -254,9 +258,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasicTestApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="sp-fastcampus-spring-sec.server-basic-test.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.BasicTestApplication" />
+    <configuration name="CustomLoginApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="sp-fastcampus-spring-sec.server-login-custom-filter.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.CustomLoginApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginBasicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="sp-fastcampus-spring-sec.server-login-basic.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.LoginBasicApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.sp.fc.web.*" />
@@ -268,18 +281,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.Test1.test_1" />
+      <item itemvalue="Gradle.sp-fastcampus-spring-sec:comp:common-utils [bootJar]" />
+      <item itemvalue="Gradle.sp-fastcampus-spring-sec:comp:common-utils [build]" />
+      <item itemvalue="Gradle.sp-fastcampus-spring-sec:comp:common-utils [jar]" />
       <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
-      <item itemvalue="Gradle.sp-fastcampus-spring-sec [test]" />
       <item itemvalue="Spring Boot.BasicSecurityTestApp" />
-      <item itemvalue="Spring Boot.BasicTestApplication (1)" />
+      <item itemvalue="Spring Boot.CustomLoginApp" />
+      <item itemvalue="Spring Boot.LoginBasicApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.BasicTestApplication (1)" />
+        <item itemvalue="Spring Boot.LoginBasicApplication" />
         <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
-        <item itemvalue="Gradle.Test1.test_1" />
-        <item itemvalue="Gradle.sp-fastcampus-spring-sec [test]" />
+        <item itemvalue="Gradle.sp-fastcampus-spring-sec:comp:common-utils [bootJar]" />
+        <item itemvalue="Gradle.sp-fastcampus-spring-sec:comp:common-utils [jar]" />
+        <item itemvalue="Gradle.sp-fastcampus-spring-sec:comp:common-utils [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -300,6 +316,10 @@
       <option name="presentableId" value="Default" />
       <updated>1729411350960</updated>
       <workItem from="1729417431043" duration="24258000" />
+      <workItem from="1729767472681" duration="21000" />
+      <workItem from="1729767508134" duration="35000" />
+      <workItem from="1729767683540" duration="507000" />
+      <workItem from="1729768203941" duration="5609000" />
     </task>
     <servers />
   </component>

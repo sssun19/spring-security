@@ -44,9 +44,10 @@ subprojects {
     }
 
     dependencies {
-//        developmentOnly("$boot:spring-boot-devtools")
+        developmentOnly("$boot:spring-boot-devtools")
         implementation "$boot:spring-boot-starter-security"
         implementation 'com.fasterxml.jackson.core:jackson-annotations'
+        implementation 'javax.servlet:javax.servlet-api:4.0.1'
 
         compileOnly lombok
         testCompileOnly lombok
@@ -54,6 +55,7 @@ subprojects {
         testAnnotationProcessor lombok
 
         testImplementation "$boot:spring-boot-starter-test"
+
 
     }
 
