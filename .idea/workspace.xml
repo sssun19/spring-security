@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e2a9058-d7dd-424a-a165-67e8b30a66d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/teacher/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/teacher/TeacherAuthenticationToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/teacher/TeacherManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/StudentAuthenticationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/StudentAuthenticationToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/controller/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/StudentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/StudentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/loginForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/loginForm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +138,9 @@
       <recent name="com.sp.fc.web.config" />
       <recent name="com.sp.fc.web.controller" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sp.fc.web.teacher" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -238,6 +252,7 @@
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="sp-fastcampus-spring-sec.server-login-custom-filter.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.CustomLoginApp" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -295,7 +310,7 @@
       <workItem from="1729767472681" duration="21000" />
       <workItem from="1729767508134" duration="35000" />
       <workItem from="1729767683540" duration="507000" />
-      <workItem from="1729768203941" duration="10318000" />
+      <workItem from="1729768203941" duration="12203000" />
     </task>
     <servers />
   </component>
