@@ -40,3 +40,16 @@ password 를 인코딩 없이 그대로 문자열을 집어넣으면 보안 문�
 admin 계정으로 로그인 하면 /admin 페이지에 접근할 수 있다.
 
 **하지만** /user 페이지로 가려고 하면 아까 user 계정으로 /admin 페이지에 접근한 것 처럼 spring security 에 막힌다.
+
+🧑‍🏫
+*sec:authorize와 sec:authentiacion() 의 차이*
+
+![image](https://github.com/user-attachments/assets/05ada567-8b97-4f6a-91a0-e9ec5c1e4c38)
+
+1️⃣ sec:authorize 태그는 해당 요소를 표시할 수 있는 권한을 설정하는 데 사용
+
+(authenticated 속성 값은 현재 사용자가 인증되었을 때만 해당 콘텐츠를 표시하겠다는 의미)
+
+2️⃣ sec:authentication 태그는 현재 사용자의 인증 상태 또는 속성을 HTML 내에서 직접 출력할 때 사용
+
+(isAuthenticated()는 현재 사용자가 인증되었는지 여부를 Boolean 값으로 반환하는 메서드)
