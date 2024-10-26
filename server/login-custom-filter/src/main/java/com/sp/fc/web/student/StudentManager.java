@@ -14,7 +14,7 @@ import java.util.Set;
 @Component
 public class StudentManager implements AuthenticationProvider, InitializingBean {
 
-    private HashMap<String, Student> studentDB = new HashMap<>();
+    private final HashMap<String, Student> studentDB = new HashMap<>();
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
