@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e2a9058-d7dd-424a-a165-67e8b30a66d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/CustomLoginFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/StudentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/StudentManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +298,7 @@
       <workItem from="1729767472681" duration="21000" />
       <workItem from="1729767508134" duration="35000" />
       <workItem from="1729767683540" duration="507000" />
-      <workItem from="1729768203941" duration="12850000" />
+      <workItem from="1729768203941" duration="13842000" />
     </task>
     <servers />
   </component>

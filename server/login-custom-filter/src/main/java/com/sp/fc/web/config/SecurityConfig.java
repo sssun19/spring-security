@@ -16,7 +16,6 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private final TeacherManager teacherManager;
-    UsernamePasswordAuthenticationFilter filter;
 
     /** StudentManager (authentication provider) 설정하기
      *  1. SecurityConfig 에서 provider 로 설정할 클래스 등록. constructor 로 주입 받기.
@@ -38,18 +37,20 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+        CustomLoginFilter filter = new CustomLoginFilter(authenticationManager());
         http
 //                .csrf().disable()
                 .authorizeRequests(request->
-                request.antMatchers("/").permitAll()
+                request.antMatchers("/", "/login").permitAll()
                         .anyRequest().authenticated()
                 )
-                .formLogin(
-                        login -> login.loginPage("/login")
-                                .permitAll()
-                                .defaultSuccessUrl("/", false)
-                                .failureUrl("/login-error")
-                )
+//                .formLogin(
+//                        login -> login.loginPage("/login")
+//                                .permitAll()
+//                                .defaultSuccessUrl("/", false)
+//                                .failureUrl("/login-error")
+//                )
+                .addFilterAt(filter, UsernamePasswordAuthenticationFilter.class)
                 .logout(logout -> logout.logoutSuccessUrl("/"))
                 .exceptionHandling(e->e.accessDeniedPage("/access-denied"))
                 ;
