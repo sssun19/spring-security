@@ -42,7 +42,7 @@ admin 계정으로 로그인 하면 /admin 페이지에 접근할 수 있다.
 **하지만** /user 페이지로 가려고 하면 아까 user 계정으로 /admin 페이지에 접근한 것 처럼 spring security 에 막힌다.
 
 🧑‍🏫
-*sec:authorize와 sec:authentiacion 의 차이*
+*sec:authorize와 sec:authentiacion() 의 차이*
 
 ![image](https://github.com/user-attachments/assets/05ada567-8b97-4f6a-91a0-e9ec5c1e4c38)
 
