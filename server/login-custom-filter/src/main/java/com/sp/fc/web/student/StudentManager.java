@@ -18,13 +18,14 @@ public class StudentManager implements AuthenticationProvider, InitializingBean 
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
-        UsernamePasswordAuthenticationToken token = (UsernamePasswordAuthenticationToken) authentication;
-        if(studentDB.containsKey(token.getName())) {
-            Student student = studentDB.get(token.getName());
+        StudentAuthenticationToken token = (StudentAuthenticationToken) authentication;
+        if(studentDB.containsKey(token.getCredentials())) {
+            Student student = studentDB.get(token.getCredentials());
             return StudentAuthenticationToken.builder()
                     .principal(student)
                     .details(student.getUsername())
                     .authenticated(true)
+                    .authorities(student.getRole())
                     .build();
         }
         return null; // if 구문으로 처리할 수 없는 authentication 은 null 형태로 반환.
@@ -32,7 +33,7 @@ public class StudentManager implements AuthenticationProvider, InitializingBean 
 
     @Override
     public boolean supports(Class<?> authentication) {
-        return authentication == UsernamePasswordAuthenticationToken.class;
+        return authentication == StudentAuthenticationToken.class;
     }
 
     @Override
