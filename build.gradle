@@ -1,16 +1,22 @@
 
 buildscript {
+
     ext {
-        spring = "2.4.1"
+        spring = "2.5.7"
         boot = "org.springframework.boot"
         lombok = "org.projectlombok:lombok"
     }
+
+
     repositories {
         mavenCentral()
     }
     dependencies {
         classpath("$boot:spring-boot-gradle-plugin:$spring")
     }
+
+
+
 }
 
 allprojects {
@@ -22,7 +28,7 @@ allprojects {
 subprojects {
 
     apply plugin: "java"
-    apply plugin: boot
+    apply plugin: 'org.springframework.boot'
     apply plugin: "io.spring.dependency-management"
     apply plugin: "idea"
 
@@ -31,9 +37,9 @@ subprojects {
     }
 
     configurations {
-        developmentOnly
+//        developmentOnly
         runtimeClasspath {
-            extendsFrom developmentOnly
+//            extendsFrom developmentOnly
         }
     }
 
@@ -41,6 +47,7 @@ subprojects {
         developmentOnly("$boot:spring-boot-devtools")
         implementation "$boot:spring-boot-starter-security"
         implementation 'com.fasterxml.jackson.core:jackson-annotations'
+        implementation 'javax.servlet:javax.servlet-api:4.0.1'
 
         compileOnly lombok
         testCompileOnly lombok
@@ -48,6 +55,8 @@ subprojects {
         testAnnotationProcessor lombok
 
         testImplementation "$boot:spring-boot-starter-test"
+
+
     }
 
     test {
@@ -57,21 +66,25 @@ subprojects {
 }
 
 
+
 ["comp", "web"].each {
     def subProjectDir = new File(projectDir, it)
     subProjectDir.eachDir {dir->
         def projectName = ":${it}-${dir.name}"
+
         project(projectName){
             bootJar.enabled(false)
             jar.enabled(true)
         }
     }
 }
+
 ["server"].each {
     def subProjectDir = new File(projectDir, it)
     subProjectDir.eachDir {dir->
         def projectName = ":${it}-${dir.name}"
         project(projectName){
+
 
         }
     }
