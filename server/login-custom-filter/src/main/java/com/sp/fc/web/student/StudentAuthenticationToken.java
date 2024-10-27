@@ -1,5 +1,6 @@
 package com.sp.fc.web.student;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,7 +10,7 @@ import org.springframework.security.core.GrantedAuthority;
 
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.List;
+
 import java.util.Set;
 
 @Data
@@ -17,6 +18,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Builder
 public class StudentAuthenticationToken implements Authentication {
+
 
     private Student principal; // 인증된 사용자의 주요 정보 (Student 객체 참조)
     private String credentials; // 인증 과정에서 사용되는 자격 증명. 비밀번호 등.
@@ -29,8 +31,12 @@ public class StudentAuthenticationToken implements Authentication {
         return principal == null ? new HashSet<>() : principal.getRole();
     }
 
+
     @Override
     public String getName() {
         return principal == null ? "" : principal.getUsername();
     }
+
+
+
 }

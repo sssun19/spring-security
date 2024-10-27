@@ -21,6 +21,7 @@ public class TeacherManager implements AuthenticationProvider, InitializingBean 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         TeacherAuthenticationToken token = (TeacherAuthenticationToken) authentication;
+
         if(teacherDB.containsKey(token.getCredentials())) {
             Teacher teacher = teacherDB.get(token.getCredentials());
             return TeacherAuthenticationToken.builder()
@@ -29,6 +30,7 @@ public class TeacherManager implements AuthenticationProvider, InitializingBean 
                     .authenticated(true)
                     .build();
         }
+
         return null; // if 구문으로 처리할 수 없는 authentication 은 null 형태로 반환.
     }
 
@@ -40,9 +42,11 @@ public class TeacherManager implements AuthenticationProvider, InitializingBean 
     @Override
     public void afterPropertiesSet() throws Exception {
         Set.of(
+
                 new Teacher("choi","최선생", Set.of(new SimpleGrantedAuthority("ROLE_TEACHER"))),
                 new Teacher("kim","김선생", Set.of(new SimpleGrantedAuthority("ROLE_TEACHER"))),
                 new Teacher("hos","호선생", Set.of(new SimpleGrantedAuthority("ROLE_TEACHER")))
         ).forEach(s-> teacherDB.put(s.getId(), s));
+
     }
 }

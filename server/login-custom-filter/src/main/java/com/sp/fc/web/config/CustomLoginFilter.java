@@ -20,6 +20,7 @@ public class CustomLoginFilter extends UsernamePasswordAuthenticationFilter {
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
 
+
         String username = this.obtainUsername(request);
         username = username != null ? username : "";
         username = username.trim();

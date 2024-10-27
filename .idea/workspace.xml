@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="1e2a9058-d7dd-424a-a165-67e8b30a66d9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
@@ -11,6 +12,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
     </list>
+=======
+    <list default="true" id="251763a4-2335-4999-89fb-2eb3fe55038b" name="Changes" comment="" />
+>>>>>>> 5-1-BasicAuthenticationFilter-Test
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +28,7 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+<<<<<<< HEAD
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
@@ -33,6 +38,14 @@
         <task path="$PROJECT_DIR$/comp/common-utils">
           <activation />
         </task>
+=======
+        <task path="$PROJECT_DIR$/comp/common-utils">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+>>>>>>> 5-1-BasicAuthenticationFilter-Test
         <projects_view>
           <tree_state>
             <expand>
@@ -47,6 +60,7 @@
       </state>
     </system>
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -54,6 +68,8 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> 5-1-BasicAuthenticationFilter-Test
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -62,6 +78,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -143,12 +160,35 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.CustomLoginApp">
+=======
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build sp-fastcampus-spring-sec.executor": "Run",
+    "Gradle.sp-fastcampus-spring-sec [dependencies].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "Spring Boot.CustomLoginApp.executor": "Debug",
+    "git-widget-placeholder": "5-1-BasicAuthenticationFilter-Test",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.LoginBasicApplication">
+>>>>>>> 5-1-BasicAuthenticationFilter-Test
     <configuration name="sp-fastcampus-spring-sec [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
+<<<<<<< HEAD
         <option name="scriptParameters" value="" />
+=======
+        <option name="scriptParameters" />
+>>>>>>> 5-1-BasicAuthenticationFilter-Test
         <option name="taskDescriptions">
           <list />
         </option>
@@ -165,6 +205,7 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="sp-fastcampus-spring-sec:comp:common-utils [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -232,6 +273,18 @@
       <method v="2" />
     </configuration>
     <configuration name="BasicSecurityTestApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+=======
+    <configuration name="BasicAuthentionTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="sp-fastcampus-spring-sec.server-basic-authentication-test.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.BasicAuthentionTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicSecurityTestApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+>>>>>>> 5-1-BasicAuthenticationFilter-Test
       <module name="sp-fastcampus-spring-sec.server-basic-test.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.BasicSecurityTestApp" />
       <method v="2">
@@ -242,11 +295,15 @@
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="sp-fastcampus-spring-sec.server-login-custom-filter.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.CustomLoginApp" />
+<<<<<<< HEAD
       <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+=======
+>>>>>>> 5-1-BasicAuthenticationFilter-Test
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="LoginBasicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="sp-fastcampus-spring-sec.server-login-basic.main" />
@@ -257,21 +314,33 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+=======
+    <configuration name="LoginBasicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="sp-fastcampus-spring-sec.server-login-basic.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.LoginBasicApplication" />
+>>>>>>> 5-1-BasicAuthenticationFilter-Test
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+<<<<<<< HEAD
       <item itemvalue="Gradle.sp-fastcampus-spring-sec:comp:common-utils [bootJar]" />
       <item itemvalue="Gradle.sp-fastcampus-spring-sec:comp:common-utils [build]" />
       <item itemvalue="Gradle.sp-fastcampus-spring-sec:comp:common-utils [jar]" />
       <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
+=======
+      <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
+      <item itemvalue="Spring Boot.BasicAuthentionTestApplication" />
+>>>>>>> 5-1-BasicAuthenticationFilter-Test
       <item itemvalue="Spring Boot.BasicSecurityTestApp" />
       <item itemvalue="Spring Boot.CustomLoginApp" />
       <item itemvalue="Spring Boot.LoginBasicApplication" />
     </list>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Spring Boot.LoginBasicApplication" />
         <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
         <item itemvalue="Gradle.sp-fastcampus-spring-sec:comp:common-utils [bootJar]" />
@@ -330,4 +399,13 @@
       </map>
     </option>
   </component>
+=======
+        <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+>>>>>>> 5-1-BasicAuthenticationFilter-Test
 </project>

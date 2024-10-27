@@ -14,11 +14,14 @@ import java.util.Set;
 @Component
 public class StudentManager implements AuthenticationProvider, InitializingBean {
 
+
     private final HashMap<String, Student> studentDB = new HashMap<>();
+
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         StudentAuthenticationToken token = (StudentAuthenticationToken) authentication;
+
         if(studentDB.containsKey(token.getCredentials())) {
             Student student = studentDB.get(token.getCredentials());
             return StudentAuthenticationToken.builder()
@@ -28,7 +31,9 @@ public class StudentManager implements AuthenticationProvider, InitializingBean 
                     .authorities(student.getRole())
                     .build();
         }
+
         return null; // if 구문으로 처리할 수 없는 authentication 은 null 형태로 반환.
+
     }
 
     @Override
@@ -39,9 +44,11 @@ public class StudentManager implements AuthenticationProvider, InitializingBean 
     @Override
     public void afterPropertiesSet() throws Exception {
         Set.of(
+
                 new Student("hong","홍길동", Set.of(new SimpleGrantedAuthority("ROLE_STUDENT"))),
                 new Student("kang","강아지", Set.of(new SimpleGrantedAuthority("ROLE_STUDENT"))),
                 new Student("rang","호랑이", Set.of(new SimpleGrantedAuthority("ROLE_STUDENT")))
         ).forEach(s-> studentDB.put(s.getId(), s));
+
     }
 }

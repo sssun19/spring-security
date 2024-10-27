@@ -33,6 +33,7 @@ public class HomeController {
         return "loginForm";
     }
 
+
     @GetMapping("/access-denied")
     public String accessDenied(){
         return "AccessDenied";

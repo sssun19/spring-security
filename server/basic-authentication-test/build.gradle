@@ -1,5 +1,4 @@
-
-
+apply from: "../web-common.gradle"
 
 dependencies {
 
