@@ -53,3 +53,14 @@ admin 계정으로 로그인 하면 /admin 페이지에 접근할 수 있다.
 2️⃣ sec:authentication 태그는 현재 사용자의 인증 상태 또는 속성을 HTML 내에서 직접 출력할 때 사용
 
 (isAuthenticated()는 현재 사용자가 인증되었는지 여부를 Boolean 값으로 반환하는 메서드)
+
+---
+
+🌟 UsernamePasswordAuthenticationFilter 커스터마이징
+
+![image](https://github.com/user-attachments/assets/d0774c67-ae6c-4b48-aaa5-d420cda73d24)
+
+사실상 폼 로그인 필터와 커스텀 필터를 같이 사용한 모습이지만 로그인 필터보다 커스텀 필터를 먼저 사용하기 때문에
+
+로그인 필터 내의 defaultSuccessUrl 이나 failureUrl 을 사용하고 싶다면 두 필터를 같이 써도 괜찮다!
+
