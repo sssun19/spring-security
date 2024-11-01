@@ -5,51 +5,88 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42df9134-ac6e-440f-a1b2-9d06af99d9d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/classes/java/main/com/sp/fc/web/BasicAuthentionTestApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/classes/java/main/com/sp/fc/web/config/SecurityConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/classes/java/main/com/sp/fc/web/controller/HomeController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/classes/java/test/com/sp/fc/web/BasicAuthenticationTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/classes/com.sp.fc.web.BasicAuthenticationTest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/css/base-style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/js/report.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/packages/com.sp.fc.web.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/resources/main/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/test-results/test/TEST-com.sp.fc.web.BasicAuthenticationTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/tmp/compileJava/compileTransaction/stash-dir/SecurityConfig.class.uniqueId0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/tmp/compileTestJava/compileTransaction/stash-dir/BasicAuthenticationTest.class.uniqueId0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-basic/build/classes/java/main/com/sp/fc/web/config/CustomAuthDetails.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/MultiChainProxyApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/test/java/com/sp/fc/web/MultiChainProxyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/config/CustomLoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/controller/TeacherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/student/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/student/StudentAuthenticationToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/student/StudentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/teacher/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/teacher/TeacherAuthenticationToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/teacher/TeacherManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/css/intro.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/templates/AccessDenied.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/templates/StudentMain.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/templates/TeacherMain.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/templates/loginForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/src/main/java/com/sp/fc/web/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-authentication-test/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/src/main/java/com/sp/fc/web/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-authentication-test/src/main/java/com/sp/fc/web/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/src/test/java/com/sp/fc/web/BasicAuthenticationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-authentication-test/src/test/java/com/sp/fc/web/BasicAuthenticationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/CustomLoginApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/CustomLoginApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/config/CustomLoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/config/CustomLoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/controller/StudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/controller/TeacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/controller/TeacherController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/student/Student$StudentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/student/Student$StudentBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/student/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/student/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/student/StudentAuthenticationToken$StudentAuthenticationTokenBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/student/StudentAuthenticationToken$StudentAuthenticationTokenBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/student/StudentAuthenticationToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/student/StudentAuthenticationToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/student/StudentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/student/StudentManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/teacher/Teacher$TeacherBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/teacher/Teacher$TeacherBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/teacher/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/teacher/Teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/teacher/TeacherAuthenticationToken$TeacherAuthenticationTokenBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/teacher/TeacherAuthenticationToken$TeacherAuthenticationTokenBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/teacher/TeacherAuthenticationToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/teacher/TeacherAuthenticationToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/teacher/TeacherManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/teacher/TeacherManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/login-multi-chain/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-multi-chain/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/web-common.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/server/web-common.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
@@ -74,10 +111,101 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.5.7/4baa2219c115fac0fa3ebc73aa067130738879e/spring-boot-2.5.7.jar!/org/springframework/boot/web/servlet/context/ServletWebServerApplicationContext.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2oFczGChDmjVAr47Bmo3r5Vlrv2" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="RunManager" selected="JUnit.BasicAuthenticationTest">
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build sp-fastcampus-spring-sec.executor": "Run",
+    "Gradle.sp-fastcampus-spring-sec [dependencies].executor": "Run",
+    "JUnit.BasicAuthenticationTest.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BasicSecurityTestApp.executor": "Run",
+    "Spring Boot.CustomLoginApp.executor": "Run",
+    "Spring Boot.LoginBasicApplication.executor": "Run",
+    "Spring Boot.MultiChainProxyApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/dev/sp-fastcampus-spring-sec/server/login-multi-chain/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\sp-fastcampus-spring-sec\server\login-multi-chain\src\main\resources" />
+      <recent name="C:\dev\sp-fastcampus-spring-sec\server\login-multi-chain\src\main\java\com\sp\fc\web\teacher" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sp.fc.web.config" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MultiChainProxyApplication">
+    <configuration name="sp-fastcampus-spring-sec [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="BasicAuthenticationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sp-fastcampus-spring-sec.server-basic-authentication-test.test" />
       <extension name="coverage">
@@ -101,24 +229,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasicSecurityTestApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomLoginApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="sp-fastcampus-spring-sec.server-basic-test.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.BasicSecurityTestApp" />
+      <module name="sp-fastcampus-spring-sec.server-login-custom-filter.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.CustomLoginApp" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.sp.fc.web.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomLoginApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="sp-fastcampus-spring-sec.server-login-custom-filter.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.CustomLoginApp" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,22 +251,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MultiChainProxyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="sp-fastcampus-spring-sec.server-login-multi-chain.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.MultiChainProxyApplication" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sp.fc.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
       <item itemvalue="JUnit.BasicAuthenticationTest" />
       <item itemvalue="Spring Boot.BasicAuthentionTestApplication" />
-      <item itemvalue="Spring Boot.CustomLoginApp" />
       <item itemvalue="Spring Boot.LoginBasicApplication" />
-      <item itemvalue="Spring Boot.BasicSecurityTestApp" />
+      <item itemvalue="Spring Boot.CustomLoginApp" />
+      <item itemvalue="Spring Boot.MultiChainProxyApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.MultiChainProxyApplication" />
+        <item itemvalue="Spring Boot.CustomLoginApp" />
+        <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
         <item itemvalue="JUnit.BasicAuthenticationTest" />
-        <item itemvalue="Spring Boot.BasicSecurityTestApp" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42df9134-ac6e-440f-a1b2-9d06af99d9d2" name="Changes" comment="" />
+      <created>1730469031196</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730469031196</updated>
+      <workItem from="1730469035023" duration="3170000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -158,5 +316,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.context.ApplicationContextException" package="org.springframework.context" />
+          <option name="timeStamp" value="6" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
