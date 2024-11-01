@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/comp/common-utils/sp-fastcampus-spring-sec.comp-common-utils.main.iml" filepath="$PROJECT_DIR$/.idea/modules/comp/common-utils/sp-fastcampus-spring-sec.comp-common-utils.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/basic-authentication-test/sp-fastcampus-spring-sec.server-basic-authentication-test.main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/basic-authentication-test/sp-fastcampus-spring-sec.server-basic-authentication-test.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/basic-authentication-test/sp-fastcampus-spring-sec.server-basic-authentication-test.test.iml" filepath="$PROJECT_DIR$/.idea/modules/server/basic-authentication-test/sp-fastcampus-spring-sec.server-basic-authentication-test.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/basic-test/sp-fastcampus-spring-sec.server-basic-test.main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/basic-test/sp-fastcampus-spring-sec.server-basic-test.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/basic-test/sp-fastcampus-spring-sec.server-basic-test.test.iml" filepath="$PROJECT_DIR$/.idea/modules/server/basic-test/sp-fastcampus-spring-sec.server-basic-test.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/login-basic/sp-fastcampus-spring-sec.server-login-basic.main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/login-basic/sp-fastcampus-spring-sec.server-login-basic.main.iml" />
