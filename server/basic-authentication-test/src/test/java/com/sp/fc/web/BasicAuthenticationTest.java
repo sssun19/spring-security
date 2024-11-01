@@ -25,6 +25,7 @@ public class BasicAuthenticationTest {
 
     RestTemplate client = new RestTemplate();
 
+
     private String greetingUrl() {
         return "http://localhost:" + port + "/greeting";
     }
@@ -74,6 +75,4 @@ public class BasicAuthenticationTest {
         ResponseEntity<String> resp = testClient.postForEntity(greetingUrl(), "kimsuna", String.class);
         assertEquals("hello kimsuna", resp.getBody());
     }
-
-
 }
