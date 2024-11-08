@@ -11,11 +11,13 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.Arrays;
 
 @EnableWebSecurity(debug = true)
@@ -29,6 +31,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         this.studentManager = studentManager;
         this.teacherManager = teacherManager;
     }
+
+//    @Bean
+//    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+//        http
+//                .formLogin()
+//                .loginPage("/login/custom")
+//                .loginProcessingUrl("/login/custom")
+//                .permitAll();
+//        return http.build();
+//    }
 
 
     @Override
@@ -50,9 +62,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 )
                 .formLogin(
                         login->login.loginPage("/login")
-                                .permitAll()
                                 .defaultSuccessUrl("/", false)
                                 .failureUrl("/login-error")
+                                .failureHandler((request, response, e) -> {
+                                    response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+                                    response.getWriter().write("로그인 실패 : " + e.getMessage());
+
+                                })
+                                .permitAll()
+
                 )
                 .addFilterAt(filter, UsernamePasswordAuthenticationFilter.class)
                 .logout(logout->logout.logoutSuccessUrl("/"))

@@ -11,7 +11,7 @@
 
 <div class="container center-contents">
     <div class="row">
-        <form class="form-signin" method="post" th:action="@{/login}">
+        <form class="form-signin" method="post" th:action="@{/login}" id="loginForm">
             <h1 class="h3 mb-3 font-weight-normal"> 로그인 </h1>
             <label for="username" class="sr-only"> 로그인 아이디 </label>
             <input type="text"
@@ -28,23 +28,65 @@
                    placeholder="비밀번호를 입력해 주세요"
                    required>
 
+
             <div class="checkbox mb-3">
                 <label>
-                    <input type="checkbox" name="remember-me"> Remember me
+                    <input type="checkbox" name="remember-me" id="rememberMe"> Remember me
                 </label>
             </div>
-            <div class="type-select">
+            <div class="type-select" id="type">
                 <input type="radio" name="type" value="student" checked> 학생
                 <input type="radio" name="type" value="teacher"> 선생님
             </div>
-            <button class="btn btn-lg btn-primary btn-block"  type="submit"> 로그인 </button>
-            <div class="error-message" th:if="${loginError}">
-                <span> 아이디나 패스워드가 올바르지 않습니다. </span>
-            </div>
+            <button class="btn btn-lg btn-primary btn-block"  type="submit" onclick="handleLogin()"> 로그인 </button>
+            <div class="error-message" id="errorMessage" style="color: red;"></div>
+
         </form>
 
     </div>
 </div>
+
+
+
+<script>
+    async function handleLogin() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const rememberMe = document.getElementById('rememberMe').checked;
+        const type = document.querySelector('input[name="type"]:checked').value;
+
+        try {
+            const response = await fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams({
+                    username,
+                    password,
+                    rememberMe,
+                    type
+                })
+            });
+
+            if (response.ok) {
+                console.log("로그인 성공");
+                console.log("아이디: ", username);
+                console.log("비번 : ", password);
+                window.location.href = '/';
+            } else {
+                const errorMessage = await response.text();
+                console.error("로그인 오류: ", errorMessage);
+                document.getElementById('errorMessage').textContent = "로그인 실패: 아이디나 비밀번호가 올바르지 않습니다.";
+            }
+        } catch (error) {
+            console.error("네트워크 오류:", error);
+            document.getElementById('errorMessage').textContent = "네트워크 오류가 발생했습니다.";
+        }
+
+    }
+
+</script>
 
 <script th:src="@{/js/bootstrap.js}" />
 </body>

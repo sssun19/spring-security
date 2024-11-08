@@ -6,6 +6,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
@@ -20,6 +21,13 @@ public class HomeController {
     public String login(){
         return "loginForm";
     }
+
+//    @GetMapping("/login/custom")
+//    public String loginCustom(@RequestParam String username, @RequestParam String password){
+//        System.out.println("username: " + username);
+//        System.out.println("password: " + password);
+//        return "loginForm";
+//    }
 
     @ResponseBody
     @GetMapping("/auth")

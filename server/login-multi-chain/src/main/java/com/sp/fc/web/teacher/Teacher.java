@@ -21,4 +21,6 @@ public class Teacher {
     private Set<GrantedAuthority> role;
 
     private List<Student> studentList;
+
+    private String password;
 }
