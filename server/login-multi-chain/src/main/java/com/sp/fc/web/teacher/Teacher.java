@@ -22,5 +22,4 @@ public class Teacher {
 
     private List<Student> studentList;
 
-    private String password;
 }
