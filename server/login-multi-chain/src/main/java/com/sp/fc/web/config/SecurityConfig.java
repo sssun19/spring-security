@@ -66,6 +66,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .exceptionHandling(e->e.accessDeniedPage("/access-denied"))
                 .formLogin()
                 .loginProcessingUrl("/")
+                .failureUrl("/login-error")
                 .permitAll()
         ;
     }
