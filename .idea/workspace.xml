@@ -11,13 +11,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/teacher/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/teacher/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/teacher/TeacherManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/teacher/TeacherManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/templates/loginForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/resources/templates/loginForm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +235,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730469031196</updated>
-      <workItem from="1730469035023" duration="8255000" />
+      <workItem from="1730469035023" duration="9503000" />
     </task>
     <servers />
   </component>

@@ -60,21 +60,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         request.antMatchers("/", "/login").permitAll()
                                 .anyRequest().authenticated()
                 )
-                .formLogin(
-                        login->login.loginPage("/login")
-                                .defaultSuccessUrl("/", false)
-                                .failureUrl("/login-error")
-                                .failureHandler((request, response, e) -> {
-                                    response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-                                    response.getWriter().write("로그인 실패 : " + e.getMessage());
 
-                                })
-                                .permitAll()
-
-                )
                 .addFilterAt(filter, UsernamePasswordAuthenticationFilter.class)
                 .logout(logout->logout.logoutSuccessUrl("/"))
                 .exceptionHandling(e->e.accessDeniedPage("/access-denied"))
+                .formLogin()
+                .loginProcessingUrl("/")
+                .permitAll()
         ;
     }
 
