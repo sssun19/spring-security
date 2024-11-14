@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 @Component
 public class StudentManager implements AuthenticationProvider, InitializingBean {
 
-    private HashMap<String, Student> studentDB = new HashMap<>();
+    private final HashMap<String, Student> studentDB = new HashMap<>();
 
 
     public List<Student> myStudentList(String teacherId) {
