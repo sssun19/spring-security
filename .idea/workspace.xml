@@ -5,32 +5,168 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42df9134-ac6e-440f-a1b2-9d06af99d9d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/config/MobileSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/controller/ApiTeacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.9.4/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.9.4/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.9.4/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.9.4/gc.properties" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/server/login-multi-chain/sp-fastcampus-spring-sec.server-login-multi-chain.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/web/student-teacher/sp-fastcampus-spring-sec.web-student-teacher.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/student/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/common-utils/build/bootJarMainClassName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/common-utils/build/libs/comp-common-utils-1.0.0-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/comp/common-utils/build/libs/comp-common-utils-1.0.0-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/build/classes/java/test/com/sp/fc/web/BasicAuthenticationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/classes/java/test/com/sp/fc/web/BasicAuthenticationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/classes/com.sp.fc.web.BasicAuthenticationTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/classes/com.sp.fc.web.BasicAuthenticationTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/packages/com.sp.fc.web.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/reports/tests/test/packages/com.sp.fc.web.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/build/test-results/test/TEST-com.sp.fc.web.BasicAuthenticationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/test-results/test/TEST-com.sp.fc.web.BasicAuthenticationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/build/tmp/compileJava/compileTransaction/stash-dir/SecurityConfig.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/build/tmp/compileTestJava/compileTransaction/stash-dir/BasicAuthenticationTest.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-authentication-test/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-authentication-test/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-test/build/classes/java/main/com/sp/fc/web/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-test/build/classes/java/main/com/sp/fc/web/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-test/build/libs/server-basic-test-1.0.0-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-test/build/libs/server-basic-test-1.0.0-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-test/build/tmp/compileJava/compileTransaction/stash-dir/SecurityConfig.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/basic-test/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/server/basic-test/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/classes/java/main/com/sp/fc/web/LoginBasicApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/classes/java/main/com/sp/fc/web/config/CustomAuthDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/classes/java/main/com/sp/fc/web/config/CustomAuthDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/classes/java/main/com/sp/fc/web/config/RequestInfo$RequestInfoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/classes/java/main/com/sp/fc/web/config/RequestInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/classes/java/main/com/sp/fc/web/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/classes/java/main/com/sp/fc/web/controller/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/css/intro.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/static/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/templates/AccessDenied.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/templates/AdminPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/templates/UserPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/resources/main/templates/loginForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/tmp/compileJava/compileTransaction/stash-dir/SecurityConfig.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-basic/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/config/CustomLoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/config/CustomLoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/student/Student$StudentBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/student/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/student/StudentAuthenticationToken$StudentAuthenticationTokenBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/student/StudentAuthenticationToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/student/StudentManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/teacher/Teacher$TeacherBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/teacher/Teacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/teacher/TeacherAuthenticationToken$TeacherAuthenticationTokenBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/teacher/TeacherAuthenticationToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/classes/java/main/com/sp/fc/web/teacher/TeacherManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/css/intro.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/static/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/templates/AccessDenied.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/templates/StudentMain.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/templates/TeacherMain.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/resources/main/templates/loginForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/tmp/compileJava/compileTransaction/stash-dir/SecurityConfig.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/CustomLoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/CustomLoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/java/com/sp/fc/student/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/StudentAuthenticationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/java/com/sp/fc/student/StudentAuthenticationToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/student/StudentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/java/com/sp/fc/student/StudentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/teacher/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/java/com/sp/fc/teacher/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/teacher/TeacherAuthenticationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/java/com/sp/fc/teacher/TeacherAuthenticationToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/java/com/sp/fc/web/teacher/TeacherManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/java/com/sp/fc/teacher/TeacherManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/css/intro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/static/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/AccessDenied.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/templates/AccessDenied.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/StudentMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/templates/StudentMain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/TeacherMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/templates/TeacherMain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-custom-filter/src/main/resources/templates/loginForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/student-teacher/src/main/resources/templates/loginForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/student/StudentAuthenticationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/student/StudentAuthenticationToken.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/student/StudentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-multi-chain/src/main/java/com/sp/fc/web/student/StudentManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-multi-chain/src/test/java/com/sp/fc/web/MultiChainProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-multi-chain/src/test/java/com/sp/fc/web/MultiChainProxyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +228,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build sp-fastcampus-spring-sec.executor": "Run",
+    "Gradle.MultiChainProxyTest.test_1.executor": "Run",
     "Gradle.sp-fastcampus-spring-sec [dependencies].executor": "Run",
     "JUnit.BasicAuthenticationTest.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -106,7 +243,7 @@
     "Spring Boot.MultiChainProxyApplication.executor": "Debug",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/dev/sp-fastcampus-spring-sec/server/login-multi-chain/src/main/resources",
+    "last_opened_file_path": "C:/dev/sp-fastcampus-spring-sec/web/student-teacher/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -121,6 +258,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\sp-fastcampus-spring-sec\web\student-teacher\src\main\resources" />
       <recent name="C:\dev\sp-fastcampus-spring-sec\server\login-multi-chain\src\main\resources" />
       <recent name="C:\dev\sp-fastcampus-spring-sec\server\login-multi-chain\src\main\java\com\sp\fc\web\teacher" />
     </key>
@@ -138,7 +276,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.MultiChainProxyTest.test_1">
+  <component name="RunManager" selected="Spring Boot.CustomLoginApp">
     <configuration name="MultiChainProxyTest.test_1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -200,6 +338,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BasicAuthentionTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="sp-fastcampus-spring-sec.server-basic-authentication-test.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.BasicAuthentionTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomLoginApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="sp-fastcampus-spring-sec.server-login-custom-filter.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.CustomLoginApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginBasicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="sp-fastcampus-spring-sec.server-login-basic.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.LoginBasicApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MultiChainProxyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="sp-fastcampus-spring-sec.server-login-multi-chain.main" />
@@ -219,13 +381,16 @@
       <item itemvalue="Gradle.MultiChainProxyTest.test_1" />
       <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
       <item itemvalue="JUnit.BasicAuthenticationTest" />
+      <item itemvalue="Spring Boot.BasicAuthentionTestApplication" />
+      <item itemvalue="Spring Boot.LoginBasicApplication" />
+      <item itemvalue="Spring Boot.CustomLoginApp" />
       <item itemvalue="Spring Boot.MultiChainProxyApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
         <item itemvalue="Gradle.MultiChainProxyTest.test_1" />
         <item itemvalue="Spring Boot.MultiChainProxyApplication" />
-        <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
         <item itemvalue="JUnit.BasicAuthenticationTest" />
       </list>
     </recent_temporary>
@@ -247,7 +412,7 @@
       <option name="presentableId" value="Default" />
       <updated>1730469031196</updated>
       <workItem from="1730469035023" duration="11550000" />
-      <workItem from="1731594308133" duration="1796000" />
+      <workItem from="1731594308133" duration="6873000" />
     </task>
     <servers />
   </component>

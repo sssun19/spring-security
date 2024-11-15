@@ -1,7 +1,5 @@
 package com.sp.fc.web.student;
 
-import com.sp.fc.web.teacher.Teacher;
-import com.sp.fc.web.teacher.TeacherAuthenticationToken;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

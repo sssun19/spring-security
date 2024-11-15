@@ -1,7 +1,7 @@
 package com.sp.fc.web.config;
 
-import com.sp.fc.web.student.StudentManager;
-import com.sp.fc.web.teacher.TeacherManager;
+import com.sp.fc.student.StudentManager;
+import com.sp.fc.teacher.TeacherManager;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
