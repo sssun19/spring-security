@@ -1,4 +1,4 @@
-package com.sp.fc.web.controller;
+package com.sp.fc.controller;
 
 
 import org.springframework.security.core.Authentication;
