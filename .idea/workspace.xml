@@ -5,44 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42df9134-ac6e-440f-a1b2-9d06af99d9d2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/comp/user-admin/src/main/java/com/sp/fc/user/domain/SpAuthority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comp/user-admin/src/main/java/com/sp/fc/user/domain/SpUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comp/user-admin/src/main/java/com/sp/fc/user/repository/SpUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comp/user-admin/src/main/java/com/sp/fc/user/service/SpUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-userdetails/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/server/login-basic/sp-fastcampus-spring-sec.server-login-basic.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-basic/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/java/com/sp/fc/web/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/java/com/sp/fc/web/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-basic/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/css/bootstrap-grid.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/css/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/css/intro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/js/bootstrap.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/js/bootstrap.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/static/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/templates/AccessDenied.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/templates/AccessDenied.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/templates/AdminPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/templates/AdminPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/templates/UserPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/templates/UserPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-basic/src/main/resources/templates/loginForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/templates/loginForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user-admin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-admin/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/user-admin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/comp/user-admin/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-userdetails/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-userdetails/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-userdetails/src/main/java/com/sp/fc/web/UserDetailsTestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-userdetails/src/main/java/com/sp/fc/web/UserDetailsTestApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-userdetails/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-userdetails/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,12 +40,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="sp-fastcampus-spring-sec" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -80,6 +50,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -145,10 +116,10 @@
       <recent name="C:\dev\sp-fastcampus-spring-sec\server\login-basic\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sp.fc.web.config" />
       <recent name="com.sp.fc.web" />
       <recent name="com.sp.fc.controller" />
       <recent name="com.sp.fc.web.controller" />
-      <recent name="com.sp.fc.web.config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -160,7 +131,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LoginBasicApplication">
+  <component name="RunManager" selected="Gradle.sp-fastcampus-spring-sec [dependencies]">
     <configuration name="MultiChainProxyTest.test_1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -297,9 +268,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
         <item itemvalue="Gradle.Tests in 'sp-fastcampus-spring-sec.server-login-basic'" />
         <item itemvalue="Gradle.MultiChainProxyTest.test_1" />
-        <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
         <item itemvalue="JUnit.BasicAuthenticationTest" />
       </list>
     </recent_temporary>
@@ -322,7 +293,7 @@
       <updated>1730469031196</updated>
       <workItem from="1730469035023" duration="11550000" />
       <workItem from="1731594308133" duration="14978000" />
-      <workItem from="1732459266861" duration="3957000" />
+      <workItem from="1732459266861" duration="7193000" />
     </task>
     <servers />
   </component>
