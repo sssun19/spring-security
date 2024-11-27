@@ -2,6 +2,7 @@ package com.sp.fc.web.config;
 
 import com.sp.fc.user.service.SpUserService;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
+import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.access.hierarchicalroles.RoleHierarchy;
 import org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl;
@@ -11,9 +12,12 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.session.HttpSessionEventPublisher;
+
+import javax.servlet.http.HttpSessionEvent;
+import java.time.LocalDateTime;
 
 @EnableWebSecurity(debug = true)
 @EnableGlobalMethodSecurity(prePostEnabled = true) // 설정된 role 확인해 접근 제한
@@ -44,6 +48,33 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 roleHierarchy.setHierarchy("ROLE_ADMIN > ROLE_USER");
                 return roleHierarchy;
 
+    }
+
+    /** 원래 web.xml 이 있다면 Servlet Listener 를 등록해야 하는데 springboot 에서는 bean 으로 대체
+     * session 이 생성 되고 만료 되는 사이클을 알아보기 위해 리스너 설정 */
+    @Bean
+    public ServletListenerRegistrationBean<HttpSessionEventPublisher> httpSessionEventPublisher() {
+        return new ServletListenerRegistrationBean<HttpSessionEventPublisher>(new HttpSessionEventPublisher(){
+            @Override
+            public void sessionCreated(HttpSessionEvent event) {
+                super.sessionCreated(event);
+                System.out.printf("===>>  [%s] 세션 생성됨 %s  \n", LocalDateTime.now(), event.getSession().getId());
+            }
+
+            @Override
+            public void sessionDestroyed(HttpSessionEvent event) {
+                super.sessionDestroyed(event);
+                System.out.printf("===>>  [%s] 세션 생성됨 %s  \n", LocalDateTime.now(), event.getSession().getId());
+
+            }
+
+            @Override
+            public void sessionIdChanged(HttpSessionEvent event, String oldSessionId) {
+                super.sessionIdChanged(event, oldSessionId);
+                System.out.printf("===>>  [%s] 세션 생성됨 %s  \n", LocalDateTime.now(), event.getSession().getId());
+
+            }
+        });
     }
 
 

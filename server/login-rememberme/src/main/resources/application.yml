@@ -1,12 +1,10 @@
 server:
-  port: 9055
+  port: 9056
+  servlet:
+    session:
+      timeout: 60s
 
 spring:
-  devtools:
-    livereload:
-      enabled: true
-    restart:
-      enabled: true
   thymeleaf:
     prefix: classpath:/templates/
     cache: false
@@ -18,10 +16,13 @@ spring:
       path: /h2-console
 
   datasource:
-    url: jdbc:h2:mem:userdetails-test;
+    url: jdbc:h2:file:~/dev/temp/h2db/rememberme;
     driver-class-name: org.h2.Driver
     username: sa
     password:
 
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
