@@ -142,3 +142,15 @@ script 로 콘솔 출력하여 오류를 잡아보려고 했지만 로그인 성
 ```
 
 위와 같이 formLogin() 메서드를 깔끔하게 비우고 꼭 필요한 메서드는 따로 구현해주었다. formLogin 메서드 안에서 로그인 페이지, 실패한 경우 등 여러 설정을 붙였더니 커스텀 필터와 충돌이 난 것 같다.
+
+---
+👨‍🏫 RememberMeAuthenticationToken
+
+![image](https://github.com/user-attachments/assets/d3d2211a-8c75-4493-8513-ab1b0d764f06)
+
+security config 클래스에서 rememberMe() 활성화</br>
+rememberMeAuthenticationFilter 에서 rememberMe 를 감지하여 사용자의 session 을 저장해둔다.</br>
+*단! 사용자의 쿠키값이 탈취 되었다고 가정할 경우 로그아웃을 해도</br>
+![image](https://github.com/user-attachments/assets/c637a2e3-db65-4082-b61f-2b1db710ade6)
+
+수동으로 입력해주면 로그인을 할 수가 있다.
