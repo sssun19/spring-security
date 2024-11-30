@@ -14,19 +14,30 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.rememberme.*;
+import org.springframework.security.web.context.SecurityContextPersistenceFilter;
 import org.springframework.security.web.session.HttpSessionEventPublisher;
 
 import javax.servlet.http.HttpSessionEvent;
+import javax.sql.DataSource;
 import java.time.LocalDateTime;
 
 @EnableWebSecurity(debug = true)
 @EnableGlobalMethodSecurity(prePostEnabled = true) // 설정된 role 확인해 접근 제한
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    private final SpUserService userService;
+    SecurityContextPersistenceFilter filter;
+    RememberMeAuthenticationFilter rememberMeAuthenticationFilter;
+    TokenBasedRememberMeServices tokenBasedRememberMeServices;
+    PersistentTokenBasedRememberMeServices persistentTokenBasedRememberMeServices;
 
-    public SecurityConfig(SpUserService userService) {
-        this.userService = userService;
+
+    private final SpUserService spUserService;
+    private final DataSource dataSource;
+
+    public SecurityConfig(SpUserService userService, DataSource dataSource) {
+        this.spUserService = userService;
+        this.dataSource = dataSource;
     }
 
     @Bean
@@ -36,7 +47,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(userService);
+        auth.userDetailsService(spUserService);
     }
 
     /**
@@ -77,6 +88,26 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         });
     }
 
+    @Bean
+    PersistentTokenRepository tokenRepository(){
+        JdbcTokenRepositoryImpl repository = new JdbcTokenRepositoryImpl();
+        repository.setDataSource(dataSource);
+        try {
+            repository.removeUserTokens("1");
+        } catch (Exception ex) {
+            repository.setCreateTableOnStartup(true);
+        }
+        return repository;
+    }
+
+    @Bean
+    PersistentTokenBasedRememberMeServices rememberMeServices() {
+        return new PersistentTokenBasedRememberMeServices(
+                "hello",
+                spUserService,
+                tokenRepository());
+    }
+
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -97,6 +128,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 )
                 .logout(logout -> logout.logoutSuccessUrl("/"))
                 .exceptionHandling(exception -> exception.accessDeniedPage("/access-denied"))
+                .rememberMe(r->r.rememberMeServices(rememberMeServices()))
         ;
     }
 
