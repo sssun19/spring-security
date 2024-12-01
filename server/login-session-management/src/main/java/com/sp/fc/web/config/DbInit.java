@@ -14,7 +14,7 @@ public class DbInit implements InitializingBean {
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        if(userService.findUser("user1").isEmpty()) {
+        if (userService.findUser("user1").isEmpty()) {
             SpUser user = userService.save(SpUser.builder()
                     .email("user1")
                     .password("1111")
@@ -24,7 +24,7 @@ public class DbInit implements InitializingBean {
 
             userService.addAuthority(user.getUserId(), "ROLE_USER");
         }
-        if(userService.findUser("user2").isEmpty()) {
+        if (userService.findUser("user2").isEmpty()) {
             SpUser user = userService.save(SpUser.builder()
                     .email("user2")
                     .password("1111")
@@ -34,7 +34,7 @@ public class DbInit implements InitializingBean {
 
             userService.addAuthority(user.getUserId(), "ROLE_USER");
         }
-        if(userService.findUser("admin").isEmpty()) {
+        if (userService.findUser("admin").isEmpty()) {
             SpUser user = userService.save(SpUser.builder()
                     .email("admin")
                     .password("1111")

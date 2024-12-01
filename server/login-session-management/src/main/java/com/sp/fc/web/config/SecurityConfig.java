@@ -58,17 +58,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Bean
     RoleHierarchy roleHierarchy() {
-                RoleHierarchyImpl roleHierarchy = new RoleHierarchyImpl();
-                roleHierarchy.setHierarchy("ROLE_ADMIN > ROLE_USER");
-                return roleHierarchy;
+        RoleHierarchyImpl roleHierarchy = new RoleHierarchyImpl();
+        roleHierarchy.setHierarchy("ROLE_ADMIN > ROLE_USER");
+        return roleHierarchy;
 
     }
 
-    /** 원래 web.xml 이 있다면 Servlet Listener 를 등록해야 하는데 springboot 에서는 bean 으로 대체
-     * session 이 생성 되고 만료 되는 사이클을 알아보기 위해 리스너 설정 */
+    /**
+     * 원래 web.xml 이 있다면 Servlet Listener 를 등록해야 하는데 springboot 에서는 bean 으로 대체
+     * session 이 생성 되고 만료 되는 사이클을 알아보기 위해 리스너 설정
+     */
     @Bean
     public ServletListenerRegistrationBean<HttpSessionEventPublisher> httpSessionEventPublisher() {
-        return new ServletListenerRegistrationBean<HttpSessionEventPublisher>(new HttpSessionEventPublisher(){
+        return new ServletListenerRegistrationBean<HttpSessionEventPublisher>(new HttpSessionEventPublisher() {
             @Override
             public void sessionCreated(HttpSessionEvent event) {
                 super.sessionCreated(event);
@@ -98,7 +100,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 
     @Bean
-    PersistentTokenRepository tokenRepository(){
+    PersistentTokenRepository tokenRepository() {
         JdbcTokenRepositoryImpl repository = new JdbcTokenRepositoryImpl();
         repository.setDataSource(dataSource);
         try {
@@ -121,7 +123,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        http.authorizeRequests(request->{
+        http.authorizeRequests(request -> {
                     request.antMatchers("/").permitAll()
                             .anyRequest().authenticated();
                     /*
@@ -131,15 +133,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                      */
 
                 })
-                .formLogin(login->login.loginPage("/login").permitAll()
+                .formLogin(login -> login.loginPage("/login").permitAll()
                         .defaultSuccessUrl("/", false)
                         .failureUrl("/login-error")
 
                 )
                 .logout(logout -> logout.logoutSuccessUrl("/"))
                 .exceptionHandling(exception -> exception.accessDeniedPage("/access-denied"))
-                .rememberMe(r->r.rememberMeServices(rememberMeServices()))
-                .sessionManagement(s->s
+                .rememberMe(r -> r.rememberMeServices(rememberMeServices()))
+                .sessionManagement(s -> s
                         .maximumSessions(1) // session 최대 1개 관리
                         .maxSessionsPreventsLogin(false) // 새로 들어온 session 은 인정, 기존 session 은 만료
                         .expiredUrl("/session-expired") // session 이 만료 되면 /session-expired 페이지로 redirect
