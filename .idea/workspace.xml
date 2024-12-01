@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42df9134-ac6e-440f-a1b2-9d06af99d9d2" name="Changes" comment="" />
+    <list default="true" id="42df9134-ac6e-440f-a1b2-9d06af99d9d2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/server/login-rememberme/sp-fastcampus-spring-sec.server-login-rememberme.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/server/login-session-management/sp-fastcampus-spring-sec.server-login-session-management.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-session-management/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-session-management/src/main/java/com/sp/fc/web/SessionManagementTestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-session-management/src/main/java/com/sp/fc/web/config/DbInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-session-management/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-session-management/src/main/java/com/sp/fc/web/controller/SessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-session-management/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-session-management/src/main/resources/templates/sessionExpired.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login-session-management/src/main/resources/templates/sessionList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-rememberme/src/main/java/com/sp/fc/web/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-rememberme/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +67,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -65,6 +90,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Gradle.Build sp-fastcampus-spring-sec.executor": "Run",
     "Gradle.MultiChainProxyTest.test_1.executor": "Run",
     "Gradle.Tests in 'sp-fastcampus-spring-sec.server-login-basic'.executor": "Run",
@@ -81,10 +107,11 @@
     "Spring Boot.LoginBasicApplication.executor": "Run",
     "Spring Boot.MultiChainProxyApplication.executor": "Run",
     "Spring Boot.RememberMeTestApplication.executor": "Run",
+    "Spring Boot.SessionManagementTestApplication.executor": "Debug",
     "Spring Boot.UserDetailsTestApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/dev/sp-fastcampus-spring-sec/server/login-rememberme/src/main/java/com/sp/fc/web",
+    "last_opened_file_path": "C:/dev/sp-fastcampus-spring-sec/server/login-session-management/src/main/resources/templates",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -99,10 +126,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\sp-fastcampus-spring-sec\server\login-session-management\src\main\resources\templates" />
+      <recent name="C:\dev\sp-fastcampus-spring-sec\server" />
       <recent name="C:\dev\sp-fastcampus-spring-sec\server\login-rememberme\src\main\java\com\sp\fc\web" />
       <recent name="C:\dev\sp-fastcampus-spring-sec\web\student-teacher\src\main\resources" />
       <recent name="C:\dev\sp-fastcampus-spring-sec\server\login-multi-chain\src\main\resources" />
-      <recent name="C:\dev\sp-fastcampus-spring-sec\server\login-multi-chain\src\main\java\com\sp\fc\web\teacher" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\dev\sp-fastcampus-spring-sec\web\user-admin\src\main\resources\templates" />
@@ -125,7 +153,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.RememberMeTestApplication">
+  <component name="RunManager" selected="Spring Boot.SessionManagementTestApplication">
     <configuration name="MultiChainProxyTest.test_1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -217,12 +245,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SessionManagementTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="sp-fastcampus-spring-sec.server-login-session-management.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.SessionManagementTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Gradle.Tests in 'sp-fastcampus-spring-sec.server-login-basic'" />
       <item itemvalue="Gradle.MultiChainProxyTest.test_1" />
       <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
       <item itemvalue="JUnit.BasicAuthenticationTest" />
       <item itemvalue="Spring Boot.RememberMeTestApplication" />
+      <item itemvalue="Spring Boot.SessionManagementTestApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -251,7 +287,7 @@
       <updated>1730469031196</updated>
       <workItem from="1730469035023" duration="11550000" />
       <workItem from="1731594308133" duration="14978000" />
-      <workItem from="1732459266861" duration="21745000" />
+      <workItem from="1732459266861" duration="30402000" />
     </task>
     <servers />
   </component>
