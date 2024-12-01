@@ -13,6 +13,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.annotation.web.configurers.SessionManagementConfigurer;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.session.SessionRegistry;
 import org.springframework.security.core.session.SessionRegistryImpl;
@@ -157,7 +159,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                          */
                 )
                 .sessionManagement(s -> s
-                        .maximumSessions(1) // session 최대 1개 관리
+//                        .sessionCreationPolicy(p-> SessionCreationPolicy.STATELESS)
+                        .sessionFixation(SessionManagementConfigurer.SessionFixationConfigurer::changeSessionId)
+                        .maximumSessions(2) // session 최대 1개 관리
                         .maxSessionsPreventsLogin(false) // 새로 들어온 session 은 인정, 기존 session 은 만료
                         .expiredUrl("/session-expired") // session 이 만료 되면 /session-expired 페이지로 redirect
                 )
