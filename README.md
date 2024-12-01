@@ -153,4 +153,28 @@ rememberMeAuthenticationFilter 에서 rememberMe 를 감지하여 사용자의 s
 *단! 사용자의 쿠키값이 탈취 되었다고 가정할 경우 로그아웃을 해도</br>
 ![image](https://github.com/user-attachments/assets/c637a2e3-db65-4082-b61f-2b1db710ade6)
 
-수동으로 입력해주면 로그인을 할 수가 있다.
+수동으로 입력해주면 로그인을 할 수가 있다.</br>
+이런 경우 보안에 취약한 RememberMeAuthentication 이 아닌 PersistentTokenBasedRememberMeServices 로 설정해줄 수 있다.</br>
+```
+@Bean
+PersistentTokenRepository tokenRepository() {
+    JdbcTokenRepositoryImpl repository = new JdbcTokenRepository();
+    repository.setDataSource(dataSource);
+
+    return repository;
+}
+
+@Bean
+PersistentTokenBasedRememberMeServices rememberMeServices() {
+    return new PersistentTokenBasedRememberMeServices(
+        "hello", //key 값 필수
+        spUserService,
+        tokenRepository());
+    )
+}
+
+...
+.rememberMe(r->r.rememberMeServices(rememberMeServices()));
+```
+</br>
+PersistentTokenBasedRememberMeServices 로 rememberMe 토큰을 발행한다.</br>
