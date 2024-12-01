@@ -6,20 +6,24 @@ import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.access.hierarchicalroles.RoleHierarchy;
 import org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.session.SessionRegistry;
 import org.springframework.security.core.session.SessionRegistryImpl;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.rememberme.*;
 import org.springframework.security.web.context.SecurityContextPersistenceFilter;
 import org.springframework.security.web.session.HttpSessionEventPublisher;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSessionEvent;
 import javax.sql.DataSource;
 import java.time.LocalDateTime;
@@ -113,10 +117,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Bean
     PersistentTokenBasedRememberMeServices rememberMeServices() {
-        return new PersistentTokenBasedRememberMeServices(
+        PersistentTokenBasedRememberMeServices service =
+                new PersistentTokenBasedRememberMeServices(
                 "hello",
                 spUserService,
                 tokenRepository());
+        service.setAlwaysRemember(true);
+        return service;
     }
 
 
@@ -124,7 +131,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http.authorizeRequests(request -> {
-                    request.antMatchers("/").permitAll()
+                    request.antMatchers("/", "/error").permitAll()
+//                            .antMatchers("/admin/**").hasRole("ADMIN")
                             .anyRequest().authenticated();
                     /*
                       이렇게 루트 페이지만 접근 허용하고 다른 request 접근을 막아버리면
@@ -133,14 +141,21 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                      */
 
                 })
-                .formLogin(login -> login.loginPage("/login").permitAll()
+                .formLogin(login -> login.loginPage("/login")
+                        .permitAll()
                         .defaultSuccessUrl("/", false)
                         .failureUrl("/login-error")
 
                 )
                 .logout(logout -> logout.logoutSuccessUrl("/"))
                 .exceptionHandling(exception -> exception.accessDeniedPage("/access-denied"))
-                .rememberMe(r -> r.rememberMeServices(rememberMeServices()))
+                .rememberMe(r -> r
+                        .rememberMeServices(rememberMeServices())
+                        /*
+                        .alwaysRemember(true) rememberMeService 를 커스텀 했기 때문에 여기서 alwaysRemember true 값을 줘도 설정 안 됨.
+                        rememberMeServices 에서 직접 설정해주어야 함.
+                         */
+                )
                 .sessionManagement(s -> s
                         .maximumSessions(1) // session 최대 1개 관리
                         .maxSessionsPreventsLogin(false) // 새로 들어온 session 은 인정, 기존 session 은 만료
@@ -152,6 +167,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(WebSecurity web) throws Exception {
         web.ignoring()
+                .antMatchers("/sessions", "/session/expire", "/session-expired")
                 .requestMatchers(
                         PathRequest.toStaticResources().atCommonLocations(), // image, css, js bootstrap
                         PathRequest.toH2Console()) // 외부 H2 DB를 사용하려면 리소스 경로 오픈했던 것처럼 열어주어야 한다.

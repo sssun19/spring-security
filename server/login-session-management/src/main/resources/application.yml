@@ -3,6 +3,9 @@ server:
   servlet:
     session:
       timeout: 60s
+#  error:
+#    whitelabel:
+#      enabled: false
 
 spring:
   thymeleaf:

@@ -40,6 +40,7 @@ public class SessionController {
         return "redirect:/sessions";
     }
 
+    @GetMapping("/session-expired")
     public String sessionExpired() {
         return "/sessionExpired";
     }
