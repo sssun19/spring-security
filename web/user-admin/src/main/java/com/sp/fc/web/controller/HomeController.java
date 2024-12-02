@@ -43,9 +43,18 @@ public class HomeController {
         return "AccessDenied";
     }
 
+    @GetMapping("/access-denied2")
+    public String accessDenied2(){
+        return "AccessDenied2";
+    }
+
+
     @PreAuthorize("hasAnyAuthority('ROLE_USER')")
     @GetMapping("/user-page")
-    public String userPage(){
+    public String userPage() throws YouCannotAccessUserPage {
+        if(true) {
+            throw new YouCannotAccessUserPage();
+        }
         return "UserPage";
     }
 

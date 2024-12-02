@@ -4,9 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/comp/common-utils/sp-fastcampus-spring-sec.comp-common-utils.main.iml" filepath="$PROJECT_DIR$/.idea/modules/comp/common-utils/sp-fastcampus-spring-sec.comp-common-utils.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/comp/user-admin/sp-fastcampus-spring-sec.comp-user-admin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/comp/user-admin/sp-fastcampus-spring-sec.comp-user-admin.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/login-rememberme/sp-fastcampus-spring-sec.server-login-rememberme.main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/login-rememberme/sp-fastcampus-spring-sec.server-login-rememberme.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/login-session-management/sp-fastcampus-spring-sec.server-login-session-management.main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/login-session-management/sp-fastcampus-spring-sec.server-login-session-management.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/student-teacher/sp-fastcampus-spring-sec.web-student-teacher.main.iml" filepath="$PROJECT_DIR$/.idea/modules/web/student-teacher/sp-fastcampus-spring-sec.web-student-teacher.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/user-admin/sp-fastcampus-spring-sec.web-user-admin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/web/user-admin/sp-fastcampus-spring-sec.web-user-admin.main.iml" />
     </modules>
   </component>

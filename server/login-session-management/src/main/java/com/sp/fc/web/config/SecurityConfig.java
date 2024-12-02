@@ -121,9 +121,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     PersistentTokenBasedRememberMeServices rememberMeServices() {
         PersistentTokenBasedRememberMeServices service =
                 new PersistentTokenBasedRememberMeServices(
-                "hello",
-                spUserService,
-                tokenRepository());
+                        "hello",
+                        spUserService,
+                        tokenRepository()) {
+                    @Override
+                    protected Authentication createSuccessfulAuthentication(HttpServletRequest request, UserDetails user) {
+                        return new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword(), null);
+//                        return super.createSuccessfulAuthentication(request, user);
+                    }
+                };
         service.setAlwaysRemember(true);
         return service;
     }
@@ -134,7 +140,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.authorizeRequests(request -> {
                     request.antMatchers("/", "/error").permitAll()
-//                            .antMatchers("/admin/**").hasRole("ADMIN")
+                            .antMatchers("/admin/**").hasRole("ADMIN")
                             .anyRequest().authenticated();
                     /*
                       이렇게 루트 페이지만 접근 허용하고 다른 request 접근을 막아버리면
@@ -150,9 +156,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
                 )
                 .logout(logout -> logout.logoutSuccessUrl("/"))
-                .exceptionHandling(exception -> exception.accessDeniedPage("/access-denied"))
+                .exceptionHandling(error -> error
+//                        .accessDeniedPage("/access-denied")
+                        .accessDeniedHandler(new CustomDeniedHandler())
+
+                )
                 .rememberMe(r -> r
-                        .rememberMeServices(rememberMeServices())
+                                .rememberMeServices(rememberMeServices())
                         /*
                         .alwaysRemember(true) rememberMeService 를 커스텀 했기 때문에 여기서 alwaysRemember true 값을 줘도 설정 안 됨.
                         rememberMeServices 에서 직접 설정해주어야 함.
@@ -160,10 +170,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 )
                 .sessionManagement(s -> s
 //                        .sessionCreationPolicy(p-> SessionCreationPolicy.STATELESS)
-                        .sessionFixation(SessionManagementConfigurer.SessionFixationConfigurer::changeSessionId)
-                        .maximumSessions(2) // session 최대 1개 관리
-                        .maxSessionsPreventsLogin(false) // 새로 들어온 session 은 인정, 기존 session 은 만료
-                        .expiredUrl("/session-expired") // session 이 만료 되면 /session-expired 페이지로 redirect
+                                .sessionFixation(SessionManagementConfigurer.SessionFixationConfigurer::changeSessionId)
+                                .maximumSessions(2) // session 최대 1개 관리
+                                .maxSessionsPreventsLogin(false) // 새로 들어온 session 은 인정, 기존 session 은 만료
+                                .expiredUrl("/session-expired") // session 이 만료 되면 /session-expired 페이지로 redirect
                 )
         ;
     }
