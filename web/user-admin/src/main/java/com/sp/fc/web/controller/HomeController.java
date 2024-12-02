@@ -21,6 +21,11 @@ public class HomeController {
         return "index";
     }
 
+    @GetMapping("/login-required")
+    public String loginRequired(){
+        return "LoginRequired";
+    }
+
     @GetMapping("/login")
     public String login(){
         return "loginForm";

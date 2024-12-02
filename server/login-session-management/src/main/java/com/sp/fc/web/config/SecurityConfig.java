@@ -159,6 +159,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .exceptionHandling(error -> error
 //                        .accessDeniedPage("/access-denied")
                         .accessDeniedHandler(new CustomDeniedHandler())
+                        .authenticationEntryPoint(new CustomEntryPoint())
 
                 )
                 .rememberMe(r -> r
