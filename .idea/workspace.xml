@@ -48,10 +48,118 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.sp-fastcampus-spring-sec [dependencies].executor": "Run",
     "git-widget-placeholder": "9-1-authority-test",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RunManager" selected="Gradle.sp-fastcampus-spring-sec [dependencies]">
+    <configuration name="sp-fastcampus-spring-sec [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthorityTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="sp-fastcampus-spring-sec.server-authority-test.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.AuthorityTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicAuthentionTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="sp-fastcampus-spring-sec.server-basic-authentication-test.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.BasicAuthentionTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicSecurityTestApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="sp-fastcampus-spring-sec.server-basic-test.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.BasicSecurityTestApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomLoginApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="sp-fastcampus-spring-sec.server-login-custom-filter.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.CustomLoginApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginBasicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="sp-fastcampus-spring-sec.server-login-basic.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.LoginBasicApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiChainProxyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="sp-fastcampus-spring-sec.server-login-multi-chain.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.MultiChainProxyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RememberMeTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="sp-fastcampus-spring-sec.server-login-rememberme.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.RememberMeTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SessionManagementTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="sp-fastcampus-spring-sec.server-login-session-management.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.SessionManagementTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDetailsTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="sp-fastcampus-spring-sec.server-login-userdetails.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.UserDetailsTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
+      <item itemvalue="Spring Boot.AuthorityTestApplication" />
+      <item itemvalue="Spring Boot.BasicSecurityTestApp" />
+      <item itemvalue="Spring Boot.RememberMeTestApplication" />
+      <item itemvalue="Spring Boot.SessionManagementTestApplication" />
+      <item itemvalue="Spring Boot.UserDetailsTestApplication" />
+      <item itemvalue="Spring Boot.BasicAuthentionTestApplication" />
+      <item itemvalue="Spring Boot.LoginBasicApplication" />
+      <item itemvalue="Spring Boot.CustomLoginApp" />
+      <item itemvalue="Spring Boot.MultiChainProxyApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <servers />
   </component>
