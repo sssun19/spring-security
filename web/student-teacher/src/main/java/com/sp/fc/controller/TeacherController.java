@@ -17,10 +17,10 @@ public class TeacherController {
 
 
     /**
-     * @Autowired
+     * @ Autowired
      * private StudentManager studentManager;
      *
-     * @Autowired 로 바로 주입 받는 것 보다는 private final 로 선언해 생성자로 객체 주입 받는 방식을 더 지양한다.
+     * @ Autowired 로 바로 주입 받는 것 보다는 private final 로 선언해 생성자로 객체 주입 받는 방식을 더 지양한다.
     */
 
     private final StudentManager studentManager;
