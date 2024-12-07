@@ -10,6 +10,6 @@ dependencies {
 
     implementation project(":web-student-teacher")
 
-    compile project(":web-student-teacher")
+    implementation project(":web-student-teacher")
 }
 

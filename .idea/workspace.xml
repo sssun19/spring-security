@@ -5,8 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42df9134-ac6e-440f-a1b2-9d06af99d9d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/web/user-admin/src/main/resources/templates/LoginRequired.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/login-session-management/src/main/java/com/sp/fc/web/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-session-management/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/authority-test/src/main/java/com/sp/fc/web/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/authority-test/src/main/java/com/sp/fc/web/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/authority-test/src/test/java/com/sp/fc/web/test/AuthorityBasicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/common-utils/build/classes/java/main/com/sp/fc/Person$PersonBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/common-utils/build/classes/java/main/com/sp/fc/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/common-utils/build/libs/comp-common-utils-1.0.0-plain.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/common-utils/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/common-utils/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/user-admin/build/classes/java/main/com/sp/fc/config/UserAdminModule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/user-admin/build/classes/java/main/com/sp/fc/user/domain/SpAuthority$SpAuthorityBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/user-admin/build/classes/java/main/com/sp/fc/user/domain/SpAuthority.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/user-admin/build/classes/java/main/com/sp/fc/user/domain/SpUser$SpUserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/user-admin/build/classes/java/main/com/sp/fc/user/domain/SpUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/user-admin/build/classes/java/main/com/sp/fc/user/repository/SpUserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/user-admin/build/classes/java/main/com/sp/fc/user/service/SpUserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/user-admin/build/libs/comp-user-admin-1.0.0-plain.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/user-admin/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp/user-admin/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/authority-test/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/server/authority-test/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/login-multi-chain/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/server/login-multi-chain/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/web-util/src/main/java/com/sp/fc/web/test/WebIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/web-util/src/main/java/com/sp/fc/web/test/WebIntegrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +101,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "Gradle.AuthorityBasicTest.test_1.executor": "Run",
     "Gradle.Build sp-fastcampus-spring-sec.executor": "Run",
     "Gradle.MultiChainProxyTest.test_1.executor": "Run",
     "Gradle.Tests in 'sp-fastcampus-spring-sec.server-login-basic'.executor": "Run",
@@ -99,7 +131,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "editing.templates",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -120,8 +152,8 @@
       <recent name="C:\dev\sp-fastcampus-spring-sec\server\login-basic\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.sp.fc.web.config" />
       <recent name="com.sp.fc.web" />
+      <recent name="com.sp.fc.web.config" />
       <recent name="com.sp.fc.controller" />
       <recent name="com.sp.fc.web.controller" />
     </key>
@@ -135,7 +167,31 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SessionManagementTestApplication">
+  <component name="RunManager" selected="Gradle.AuthorityBasicTest.test_1">
+    <configuration name="AuthorityBasicTest.test_1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":server-authority-test:test" />
+            <option value="--tests" />
+            <option value="&quot;com.sp.fc.web.test.AuthorityBasicTest.test_1&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="MultiChainProxyTest.test_1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -219,6 +275,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AuthorityTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="sp-fastcampus-spring-sec.server-authority-test.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.AuthorityTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BasicAuthentionTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="sp-fastcampus-spring-sec.server-basic-authentication-test.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sp.fc.web.BasicAuthentionTestApplication" />
@@ -270,10 +333,12 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.AuthorityBasicTest.test_1" />
       <item itemvalue="Gradle.Tests in 'sp-fastcampus-spring-sec.server-login-basic'" />
       <item itemvalue="Gradle.MultiChainProxyTest.test_1" />
       <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
       <item itemvalue="JUnit.BasicAuthenticationTest" />
+      <item itemvalue="Spring Boot.AuthorityTestApplication" />
       <item itemvalue="Spring Boot.RememberMeTestApplication" />
       <item itemvalue="Spring Boot.SessionManagementTestApplication" />
       <item itemvalue="Spring Boot.UserDetailsTestApplication" />
@@ -284,6 +349,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AuthorityBasicTest.test_1" />
         <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
         <item itemvalue="Gradle.Tests in 'sp-fastcampus-spring-sec.server-login-basic'" />
         <item itemvalue="Gradle.MultiChainProxyTest.test_1" />
