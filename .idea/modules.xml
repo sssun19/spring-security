@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/comp/common-utils/sp-fastcampus-spring-sec.comp-common-utils.main.iml" filepath="$PROJECT_DIR$/.idea/modules/comp/common-utils/sp-fastcampus-spring-sec.comp-common-utils.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/comp/user-admin/sp-fastcampus-spring-sec.comp-user-admin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/comp/user-admin/sp-fastcampus-spring-sec.comp-user-admin.main.iml" />
+    </modules>
+  </component>
+</project>
