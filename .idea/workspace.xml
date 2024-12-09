@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42df9134-ac6e-440f-a1b2-9d06af99d9d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/authority-test/src/main/java/com/sp/fc/web/service/SecurityMessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/authority-test/src/main/java/com/sp/fc/web/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/authority-test/src/main/java/com/sp/fc/web/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/authority-test/src/test/java/com/sp/fc/web/test/SpELTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +80,10 @@
     "Gradle.AuthorityBasicTest.test_1.executor": "Run",
     "Gradle.Build sp-fastcampus-spring-sec.executor": "Run",
     "Gradle.MultiChainProxyTest.test_1.executor": "Run",
+    "Gradle.SpELTest.test_1.executor": "Run",
+    "Gradle.SpELTest.test_2.executor": "Debug",
+    "Gradle.SpELTest.test_3.executor": "Run",
+    "Gradle.SpELTest.test_4.executor": "Run",
     "Gradle.Tests in 'sp-fastcampus-spring-sec.server-login-basic'.executor": "Run",
     "Gradle.sp-fastcampus-spring-sec [dependencies].executor": "Run",
     "JUnit.BasicAuthenticationTest.executor": "Run",
@@ -137,7 +148,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.AuthorityBasicTest.test_1">
+  <component name="RunManager" selected="Gradle.SpELTest.test_4">
     <configuration name="AuthorityBasicTest.test_1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -162,7 +173,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MultiChainProxyTest.test_1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SpELTest.test_1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -173,9 +184,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":server-login-multi-chain:test" />
+            <option value=":server-authority-test:test" />
             <option value="--tests" />
-            <option value="&quot;com.sp.fc.web.MultiChainProxyTest.test_1&quot;" />
+            <option value="&quot;com.sp.fc.web.test.SpELTest.test_1&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -186,7 +197,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'sp-fastcampus-spring-sec.server-login-basic'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SpELTest.test_2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -197,7 +208,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":server-login-basic:test" />
+            <option value=":server-authority-test:test" />
+            <option value="--tests" />
+            <option value="&quot;com.sp.fc.web.test.SpELTest.test_2&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -208,42 +221,53 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="sp-fastcampus-spring-sec [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SpELTest.test_3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="dependencies" />
+            <option value=":server-authority-test:test" />
+            <option value="--tests" />
+            <option value="&quot;com.sp.fc.web.test.SpELTest.test_3&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="BasicAuthenticationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sp-fastcampus-spring-sec.server-basic-authentication-test.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sp.fc.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sp.fc.web" />
-      <option name="MAIN_CLASS_NAME" value="com.sp.fc.web.BasicAuthenticationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="SpELTest.test_4" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":server-authority-test:test" />
+            <option value="--tests" />
+            <option value="&quot;com.sp.fc.web.test.SpELTest.test_4&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="AuthorityTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="sp-fastcampus-spring-sec.server-authority-test.main" />
@@ -304,10 +328,10 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.AuthorityBasicTest.test_1" />
-      <item itemvalue="Gradle.Tests in 'sp-fastcampus-spring-sec.server-login-basic'" />
-      <item itemvalue="Gradle.MultiChainProxyTest.test_1" />
-      <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
-      <item itemvalue="JUnit.BasicAuthenticationTest" />
+      <item itemvalue="Gradle.SpELTest.test_1" />
+      <item itemvalue="Gradle.SpELTest.test_2" />
+      <item itemvalue="Gradle.SpELTest.test_3" />
+      <item itemvalue="Gradle.SpELTest.test_4" />
       <item itemvalue="Spring Boot.AuthorityTestApplication" />
       <item itemvalue="Spring Boot.RememberMeTestApplication" />
       <item itemvalue="Spring Boot.SessionManagementTestApplication" />
@@ -319,11 +343,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SpELTest.test_4" />
+        <item itemvalue="Gradle.SpELTest.test_3" />
+        <item itemvalue="Gradle.SpELTest.test_2" />
+        <item itemvalue="Gradle.SpELTest.test_1" />
         <item itemvalue="Gradle.AuthorityBasicTest.test_1" />
-        <item itemvalue="Gradle.sp-fastcampus-spring-sec [dependencies]" />
-        <item itemvalue="Gradle.Tests in 'sp-fastcampus-spring-sec.server-login-basic'" />
-        <item itemvalue="Gradle.MultiChainProxyTest.test_1" />
-        <item itemvalue="JUnit.BasicAuthenticationTest" />
       </list>
     </recent_temporary>
   </component>
