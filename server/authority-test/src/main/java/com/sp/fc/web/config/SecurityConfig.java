@@ -1,9 +1,9 @@
 package com.sp.fc.web.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.AccessDecisionManager;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.access.ConfigAttribute;
-import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.InsufficientAuthenticationException;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -41,13 +41,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         };
     }
 
+    @Autowired
+    private NameCheck nameCheck;
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .csrf().disable()
                 .httpBasic().and()
                 .authorizeRequests(authority -> authority
-                        .mvcMatchers("/greeting").hasRole("USER")
+                        .mvcMatchers("/greeting/{name}")
+                                .access("@nameCheck.check(#name)") // NameCheck 클래스에서 설정한 check 메서드로 name 판별
+//                                .hasRole("USER")
                         .anyRequest().authenticated()
 //                        .accessDecisionManager(filterAccessDecisionManager())
 
@@ -64,7 +69,20 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         User.withDefaultPasswordEncoder()
                                 .username("user1")
                                 .password("1111")
-                                .roles("USER")
-                );
+                                .roles("USER", "STUDENT")
+                )
+                .withUser(
+                        User.withDefaultPasswordEncoder()
+                                .username("user2")
+                                .password("1111")
+                                .roles("USER", "STUDENT")
+                )
+                .withUser(
+                        User.withDefaultPasswordEncoder()
+                                .username("tutor1")
+                                .password("1111")
+                                .roles("USER", "TUTOR")
+                )
+        ;
     }
 }
