@@ -53,4 +53,29 @@ public class PaperTest extends WebIntegrationTest {
 
     }
 
+    @DisplayName("2. user1 이 user2 의 시험지는 볼 수 없다.")
+    @Test
+    void test_2() {
+        paperService.setPaper(paper2);
+
+        client = new TestRestTemplate("user1", "1111");
+        ResponseEntity<Paper> response = client.exchange(uri("/paper/get/2"),
+                HttpMethod.GET, null, new ParameterizedTypeReference<Paper>() {
+                });
+
+        assertEquals(403, response.getStatusCodeValue());
+    }
+
+    @DisplayName("3. user2 라도 출제 중인 시험지에는 접근할 수 없다.")
+    @Test
+    void test_3() {
+
+        client = new TestRestTemplate("user2", "1111");
+        ResponseEntity<Paper> response = client.exchange(uri("/paper/get/2"),
+                HttpMethod.GET, null, new ParameterizedTypeReference<Paper>() {
+                });
+
+        assertEquals(403, response.getStatusCodeValue());
+
+    }
 }
