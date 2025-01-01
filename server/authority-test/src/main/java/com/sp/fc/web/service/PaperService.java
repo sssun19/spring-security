@@ -39,4 +39,7 @@ public class PaperService implements InitializingBean {
         return paperDB.get(paperId);
     }
 
+    public List<Paper> getAllPapers() {
+        return paperDB.values().stream().collect(Collectors.toList());
+    }
 }

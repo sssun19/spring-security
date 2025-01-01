@@ -20,7 +20,7 @@ import org.springframework.security.core.Authentication;
 import java.util.ArrayList;
 import java.util.List;
 
-@EnableGlobalMethodSecurity(prePostEnabled = true)
+@EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
 public class MethodSecurityConfiguration extends GlobalMethodSecurityConfiguration {
 
     @Autowired
@@ -52,7 +52,7 @@ public class MethodSecurityConfiguration extends GlobalMethodSecurityConfigurati
         decisionVoters.add(new PreInvocationAuthorizationAdviceVoter(expressionAdvice));
         decisionVoters.add(new RoleVoter());
         decisionVoters.add(new AuthenticatedVoter());
-//        decisionVoters.add(new CustomVoter());
+        decisionVoters.add(new CustomVoter());
 
         /* return new UnanimousBased(decisionVoters);  만장일치 위원회
          return new ConsensusBased(decisionVoters); 다수결 위원회

@@ -8,9 +8,12 @@ import org.springframework.security.core.Authentication;
 import java.util.Collection;
 
 public class CustomVoter implements AccessDecisionVoter<MethodInvocation> {
+
+    private final String PREFIX = "SCHOOL_";
+
     @Override
-    public boolean supports(ConfigAttribute configAttribute) {
-        return true;
+    public boolean supports(ConfigAttribute attribute) {
+        return attribute.getAttribute().startsWith(PREFIX);
     }
 
     @Override
@@ -19,7 +22,15 @@ public class CustomVoter implements AccessDecisionVoter<MethodInvocation> {
     }
 
     @Override
-    public int vote(Authentication authentication, MethodInvocation methodInvocation, Collection<ConfigAttribute> collection) {
-        return ACCESS_GRANTED;
+    public int vote(Authentication authentication, MethodInvocation methodInvocation, Collection<ConfigAttribute> attributes) {
+        String role = attributes.stream().filter(attr -> attr.getAttribute().startsWith(PREFIX))
+                .map(attr->attr.getAttribute().substring(PREFIX.length()))
+                .findFirst().get();
+
+        if(authentication.getAuthorities().stream().anyMatch(auth->auth.getAuthority().equals("ROLE_"+role.toUpperCase()))) {
+            return ACCESS_GRANTED;
+        }
+
+        return ACCESS_DENIED;
     }
 }
