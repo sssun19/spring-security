@@ -10,6 +10,7 @@ import org.springframework.security.access.expression.method.ExpressionBasedPreI
 import org.springframework.security.access.expression.method.MethodSecurityExpressionHandler;
 import org.springframework.security.access.expression.method.MethodSecurityExpressionOperations;
 import org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor;
+import org.springframework.security.access.method.MethodSecurityMetadataSource;
 import org.springframework.security.access.prepost.PreInvocationAuthorizationAdviceVoter;
 import org.springframework.security.access.vote.*;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -25,6 +26,11 @@ public class MethodSecurityConfiguration extends GlobalMethodSecurityConfigurati
 
     @Autowired
     private CustomPermissionEvaluator permissionEvaluator;
+
+    @Override
+    protected MethodSecurityMetadataSource customMethodSecurityMetadataSource() {
+        return new CustomMetadataSource();
+    }
 
     @Override
     protected MethodSecurityExpressionHandler createExpressionHandler() {

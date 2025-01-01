@@ -31,7 +31,7 @@ public class PaperController {
         return paperService.getMyPapers(user.getUsername());
     }
 
-    @Secured({"SCHOOL_PRIMARY"})
+//    @Secured({"SCHOOL_PRIMARY"})
     @GetMapping("/getPapersByPrimary")
     public List<Paper> getPapersByPrimary(@AuthenticationPrincipal User user) {
         return paperService.getAllPapers();
